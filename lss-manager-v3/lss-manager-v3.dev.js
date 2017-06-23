@@ -364,7 +364,7 @@ lssm.Module = {
             has: false,
             function_code: ""
         },
-        collisions: ['Layout03', 'FMS5InMap']
+        collisions: ['Layout03', 'FMS5InMap', 'heatmap']
     },
     tagMissions: {
         name: {
@@ -596,7 +596,8 @@ lssm.Module = {
         settings: {
             has: false,
             function_code: ""
-        }
+        },
+        collisions: ['Layout03', 'WachenplanungOnMap']
     },
     centermap: {
         name: {
@@ -715,6 +716,48 @@ lssm.Module = {
             nl: 'Deze module toont de begintijd en -datum van je melding en laat daarnaast zien hoeveel tijd er verstreken is sinds de melding binnenkwam.'
         },
         source: '/modules/lss-missionDate/missionDate.user.js',
+        noapp: false, // Nicht im App-Store auflisten
+        inframe: true,
+        develop: false,
+        settings: {
+            has: false,
+            function_code: ""
+        }
+    },
+	iconFilter: {
+        name: {
+            de: 'Icon Gebäude Filter',
+            en: 'Icon building filter',
+            nl: 'Icon building filter'
+        },
+        active: false,
+        description: {
+            de: 'Tauscht den Gebäude Filter mit Icons aus.',
+            en: 'Replaces the building filter with icons.',
+            nl: 'Replaces the building filter with icons.'
+        },
+        source: '/modules/lss-iconFilter/iconFilter.user.js',
+        noapp: false, // Nicht im App-Store auflisten
+        inframe: false,
+        develop: false,
+        settings: {
+            has: false,
+            function_code: ""
+        }
+    },
+	sumDailyMissions: {
+        name: {
+            de: 'Summe für die tägliche Zusammenfassung',
+            en: 'Sum for daily stats',
+            nl: 'Totaalweergave in dagsamenvatting'
+        },
+        active: false,
+        description: {
+            de: 'Zeigt eine Summe über Anzahl Einsätze, Patienten, Gefangene und Verbandseinlieferungen in der täglichen Zusammenfassung an.',
+            en: 'Shows sums over missions, patients, prisoners and alliance in the daily stats page',
+            nl: 'Geeft een totaaloverzicht van het aantal meldingen, patienten, gevangenen en teamopnames.'
+        },
+        source: '/modules/lss-sumDailyMissions/sumDailyMissions.user.js',
         noapp: false, // Nicht im App-Store auflisten
         inframe: true,
         develop: false,
@@ -848,7 +891,19 @@ lssm.appstore = {
             '<a href="https://www.leitstellenspiel.de/messages/new?target=DLRG-Dominik" target="_blank" class="username-link">'+
             '<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>'+
             '</a>'+
-            '</span>'+
+            '</span>&nbsp;'+
+            '<span class="label label-primary">'+
+            '<a href="https://www.leitstellenspiel.de/profile/68742" target="_blank" class="username-link">@MrWeezle</a>&nbsp;'+
+            '<a href="https://www.leitstellenspiel.de/messages/new?target=MrWeezle" target="_blank" class="username-link">'+
+            '<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>'+
+            '</a>'+
+	    '</span>&nbsp;'+
+	    '<span class="label label-primary">'+
+            '<a href="https://www.leitstellenspiel.de/profile/675" target="_blank" class="username-link">@SanniHameln</a>&nbsp;'+
+            '<a href="https://www.leitstellenspiel.de/messages/new?target=SanniHameln" target="_blank" class="username-link">'+
+            '<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>'+
+            '</a>'+
+	    '</span>'+
             '</div>'+
             '</div>'
         );
@@ -1151,7 +1206,7 @@ lssm.modal = {
     // Create the lssm dropdown menu
     lssm.appstore.createDropDown();
     // And append the version to it
-    $('#' + lssm.config.prefix + '_menu').prepend('<li class="menu-center"><a href="'+lssm.github+'" target="_blank">' + I18n.t('lssm.version') + ': ' + lssm.config.version + '</a></li><li class="divider"></li>');
+    $('#' + lssm.config.prefix + '_menu').prepend('<li class="menu-center"><a href="'+lssm.config.github+'" target="_blank">' + I18n.t('lssm.version') + ': ' + lssm.config.version + '</a></li><li class="divider"></li>');
     // Only execute everything else if user is logged in
     if (typeof user_id == "undefined") {
         $('#' + lssm.config.prefix + '_menu').append('<li class="menu-center">' + I18n.t('lssm.login') + '</li>');
