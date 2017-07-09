@@ -24,10 +24,11 @@ jQuery.expr[':'].containsci = function(a, i, m) {
 
 var lssm = {
     config: {
-        server: "https://lss-manager.de/lss-entwicklung", // Domain wo alles liegt
+        //server: "https://localhost/lss-manager-v3",
+    	server: "https://lss-manager.de/lss-entwicklung", // Domain wo alles liegt
         stats_uri: "https://proxy.lss-manager.de/stat.php",
         forum_link: "https://forum.leitstellenspiel.de/index.php/Thread/11166-LSS-MANAGER-V3/",
-        version: "3.2.3",
+        version: "3.2.4",
         github: 'https://github.com/LSS-Manager/lss-manager-v3',
         prefix: 'lssm'
     },
@@ -273,6 +274,61 @@ lssm.Module = {
             function_code: ""
         }
     },
+    coinConfirm: {
+        name: {
+            de: 'Coin Confirm',
+            en: 'Coin Confirm'
+        },
+        active: false,
+        inframe: true,
+        description: {
+            de: 'Fordert zur Bestätigung bei Coin Ausgaben auf, um versehendliche Ausgaben zu vermeiden. (Ohne Gewähr)',
+            en: 'Asks for confirmation on coin spendings to avoid mistakes. (Without warranty)'
+        },
+        source: '/modules/lss-coinconfirm/CoinConfirm.user.js',
+        develop: false,
+        settings: {
+            has: false,
+            function_code: ""
+        }
+    },
+    releaseNotes: {
+        name: {
+            de: 'Release Notes',
+            en: 'Release Notes'
+        },
+        active: false,
+        inframe: false,
+        description: {
+            de: 'Informiert immer über die Neusten Updates im LSSM',
+            en: 'Provides information about the latest updates in LSSM'
+        },
+        source: '/modules/lss-releasenotes/Releasenotes.user.js',
+        develop: true,
+        settings: {
+            has: false,
+            function_code: ""
+        }
+    },
+    vonginator: {
+        name: {
+            de: 'Vonginator',
+            en: 'Vonginator'
+        },
+        active: false,
+        inframe: true,
+        description: {
+            de: 'Hallo i bims. 1 total sinnlose Skript vong Bedeutung her. lol',
+            en: 'Not seriously meant script for german language only.'
+        },
+        source: '/modules/lss-vonginator/Vonginator.user.js',
+        supportedLocales: ['de'],
+        develop: false,
+        settings: {
+            has: false,
+            function_code: ""
+        }
+    },
     Notification_Alert: {
         name: {
             de: 'Notification Alert',
@@ -303,6 +359,24 @@ lssm.Module = {
         },
         source: '/modules/lss-redesign-01/redesign-01.user.js',
         develop: false,
+        settings: {
+            has: false,
+            function_code: ""
+        }
+    },
+    DestinationFilter: {
+        name: {
+            de: 'Zielort Filter',
+            en: 'Destination filter'
+        },
+        active: false,
+        description: {
+            de: 'Ermöglicht belegte oder ungeeignete KH auszublenden',
+            en: 'Allows hiding full or unelegible hospitals'
+        },
+        source: '/modules/lss-destinationFilter/DestinationFilter.user.js',
+        develop: false,
+        inframe: true,
         settings: {
             has: false,
             function_code: ""
@@ -606,8 +680,8 @@ lssm.Module = {
         },
         active: false,
         description: {
-            de: 'Ändert das Standardverhalten dahingehend, dass beim Aufruf der Seite nicht mehr zwingend die Leitstelle im Mittelpunkt steht, sondern alle Einsätze auf einen Blick im optimalen Zoom-Level sichtbar sind.',
-            en: 'Modifies default behavior that all missions are visible on page load with an optimal zoom-level.'
+            de: 'Zentriert die Karte beim Aufruf des Spiels und bei Knopfdruck. Genau so wie du es möchtest.',
+            en: 'Centers the map on page load and on click. Just as you prefer.'
         },
         source: '/modules/lss-centermap/Centermap.user.js',
         noapp: false, // Nicht im App-Store auflisten
@@ -615,7 +689,7 @@ lssm.Module = {
         develop: false,
         settings: {
             has: false,
-            function_code: ""
+            function_code: "CenterMap_show_settings"
         }
     }, /*
      missionTabs: {
@@ -675,6 +749,26 @@ lssm.Module = {
         },
         source: '/modules/lss-statusDispatching/statusDispatching.user.js',
         noapp: false, // Nicht im App-Store auflisten
+        inframe: true,
+        develop: false,
+        settings: {
+            has: false,
+            function_code: "statusDispatching_show_settings"
+        }
+    }
+    ,
+    managedSettings: {
+        name: {
+            de: 'Einstellungen',
+            en: 'Settings'
+        },
+        active: true,
+        description: {
+            de: 'Globale Einstellungen',
+            en: 'Global Settings'
+        },
+        source: '/modules/lss-managedsettings/ManagedSettings.user.js',
+        noapp: true, // Nicht im App-Store auflisten
         inframe: true,
         develop: false,
         settings: {
@@ -765,6 +859,27 @@ lssm.Module = {
             has: false,
             function_code: ""
         }
+    },
+    aaoZaehler: {
+        name: {
+            de: 'AAO-Klick-Zähler',
+            en: 'Alarm-Regulations-Counter',
+            nl: 'AUR-Klik-Teller'
+        },
+        active: false,
+        description: {
+            de: 'Zählt die Klicks auf einen AAO-Button',
+            en: 'Counts the clicks on an alarm-regulations-button',
+            nl: 'Telt het aantal keer dat een AUR aangeklikt is.'
+        },
+        source: '/modules/lss-AAO-Zaehler/aao-zaehler.js',
+        noapp: false,
+        inframe: true,
+        develop: false,
+        settings: {
+            has: false,
+            function_code: ""
+        }
     }
 };
 
@@ -814,8 +929,9 @@ lssm.appstore = {
         for (var i in mods)
         {
             var mod = lssm.Module[mods[i]];
-            // Do not show certain modules in the lssm.appstore
-            if ('noapp' in mod && mod.noapp === true)
+            var isSupportedLocale = !('supportedLocales' in mod) || mod.supportedLocales.indexOf(I18n.currentLocale()) >= 0;
+            // Do not show certain modules in the lssm.appstore or is not supported with this locale
+            if ('noapp' in mod && mod.noapp === true || !isSupportedLocale)
                 continue;
             var panel = $('<div style="margin-top:10px;" class="lssm_module'+(mod.develop ? ' lssm_module_develop' : '')+'">' +
                 '<div class="panel panel-default" style="display: inline-block;width:100%;">' +
@@ -948,7 +1064,6 @@ lssm.appstore = {
         var content = $('#navbar-mobile-footer').prev();
         // hier ist alles drin
         content.attr('id', 'content');
-        var self = this;
         //div.append(createModulePanels());
         settingButton.click(function () {
             // versteckt den Hauptkörper von LSS und öffnet das LSS Manager Einstellungsfenster / den Appstore
@@ -1070,6 +1185,62 @@ lssm.settings = {
 };
 
 /**
+ * Add the managed settings-functions to lssm
+ */
+lssm.managedSettings = {
+   registeredModules : [],
+   
+   register : function(moduleSettings){
+	   "use strict";
+	   var moduleId = moduleSettings.id;
+	   // If settings don't exist, overwrite with defaults
+       if (!lssm.settings.get(moduleId) || !lssm.settings.get(moduleId)['settings']) {
+           for (var settingsKey in moduleSettings.settings) {
+        	   moduleSettings.settings[settingsKey].value = moduleSettings.settings[settingsKey].default;
+           }
+       // If we have values use them
+       } else {
+    	   var storedSettings = lssm.settings.get(moduleId)['settings'];
+           for (var settingsKey in moduleSettings.settings) {
+        	   if(storedSettings[settingsKey] && storedSettings[settingsKey].value){
+        		   moduleSettings.settings[settingsKey].value = storedSettings[settingsKey].value;
+        	   } else {       
+        		   moduleSettings.settings[settingsKey].value = moduleSettings.settings[settingsKey].default;
+        	   }
+           }
+       }  
+       lssm.managedSettings.registeredModules[moduleId] = moduleSettings;
+   },
+   
+   getSetting : function(module, field){
+	   "use strict";
+	   var settings = this.getSettings(module);
+	   if(settings !== undefined && settings[field] !== undefined) {
+		   return settings[field]['value'];
+	   } else {
+		   return undefined;
+	   }
+   },
+   
+   getSettings : function(module){
+	   "use strict";
+	   if(lssm.managedSettings.registeredModules[module]){
+		   return lssm.managedSettings.registeredModules[module]['settings'];
+	   } else {
+		   return undefined;
+	   }
+   },
+   
+   update : function(moduleSettings){
+	   "use strict";
+	   var moduleId = moduleSettings.id;
+	   lssm.settings.set(moduleSettings.id, moduleSettings);
+       lssm.managedSettings.registeredModules[moduleId] = moduleSettings;
+   },
+   
+};
+
+/**
  * Add the module-handler to LSSM
  */
 lssm.modules = {
@@ -1088,7 +1259,7 @@ lssm.modules = {
             var keys = ['name', 'description'];
             for (var k in keys) {
                 k = keys[k];
-                if (!k in lssm.Module[mod])
+                if (!(k in lssm.Module[mod]))
                     continue;
                 for (var l in lssm.Module[mod][k]) {
                     l = l.toString();
@@ -1222,9 +1393,6 @@ lssm.modal = {
         // There goes the core
         function loadCore() {
             // Load required library's
-            var game = window.location.hostname.toLowerCase().replace("www.", "").split(".")[0];
-            var uid = "uid=" + game + user_id + "&";
-            // alle Settings die immer wieder benötigt werden
             $("head").append('<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="   +crossorigin="anonymous"></script>')
                 .append('<script src="' + lssm.getlink('/lss-manager-v3/js/highcharts.min.js') +'" type="text/javascript"></script>')
                 .append('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css">');

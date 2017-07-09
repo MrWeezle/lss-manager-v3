@@ -1,1986 +1,1601 @@
 (function() {
-	//Alle Einsatz-IDs mit Stichwort-Zuweisung
-    I18n.translations.de['lssm']['missionKeyword'] = {
-        fw: 'B ',
-        thl: 'THL',
-        abc: 'ABC',
-        rd: 'RD',
-        ktp: 'KTP',
-        pol: 'POL',
-        thw: 'THW',
-        bp: 'BP ',
-        0: 'B 1',
-        1: 'B 2',
-        2: 'B 2',
-        3: 'B 1',
-        4: 'B 1',
-        5: 'B 3',
-        6: 'B 2',
-        7: 'B 1',
-        8: 'B 1',
-        9: 'B 2',
-        10: 'B 2',
-        11: 'B 1',
-        12: 'THL 1',
-        13: 'B 3',
-        14: 'B 2',
-        15: 'B WALD',
-        16: 'B 2',
-        17: 'B 1',
-        18: 'B 1',
-        19: 'B 2',
-        20: 'B 3',
-        21: 'B 2',
-        22: 'B 3',
-        23: 'B 3',
-        24: 'B 1',
-        25: 'THL 1',
-        26: 'B 3',
-        27: 'THL 1',
-        28: 'B 3',
-        29: 'B 3',
-        30: 'THL 1',
-        31: 'THL 1',
-        32: 'B 2',
-        33: 'B 3',
-        34: 'B 3',
-        35: 'B 4',
-        36: 'B 4',
-        37: 'B 1',
-        38: 'B 1',
-        39: 'B 1',
-        40: 'B 1',
-        41: 'ABC B',
-        42: 'ABC B 4',
-        43: 'THL 5',
-        44: 'RD 1',
-        45: 'RD 1',
-        46: 'RD 2',
-        47: 'RD 2',
-        48: 'RD 2',
-        49: 'RD 1',
-        50: 'RD 1',
-        51: 'B 4',
-        52: 'B 1',
-        53: 'THL 1',
-        54: 'RD 1',
-        55: 'B 1',
-        56: 'RD 1',
-        57: 'RD 1',
-        58: 'RD 1',
-        59: 'ABC 3',
-        60: 'POL 1',
-        61: 'POL 1',
-        62: 'POL 1',
-        63: 'POL 1',
-        64: 'POL 1',
-        65: 'POL 1',
-        66: 'POL 1',
-        67: 'POL 1',
-        68: 'POL 1',
-        69: 'POL 1',
-        70: 'POL 1',
-        71: 'POL 1',
-        72: 'THL P HÖHENRETTUNG',
-        73: 'POL 3',
-        74: 'POL 1',
-        75: 'POL 7',
-        76: 'B 3',
-        77: 'THL P WOHNUNG',
-        78: 'THL 1',
-        79: 'THL P HÖHENRETTUNG',
-        80: 'B 3',
-        81: 'POL 1',
-        82: 'POL 1',
-        83: 'ABC THL 3',
-        84: 'B ZUG',
-        85: 'POL 1',
-        86: 'B 4',
-        87: 'THL VU FLUGZEUG 1',
-        88: 'B 1',
-        89: 'THL 2',
-        891:'THL 4',
-        90: 'POL 1',
-        91: 'THL 1',
-        92: 'RD 2',
-        93: 'B 3',
-        94: 'THL 1',
-        95: 'THL 2',
-        96: 'B 3',
-        97: 'ABC ÖL',
-        98: 'POL 1',
-        99: 'THL VU FLUGZEUG 2',
-        100: 'B 3',
-        101: 'B 3',
-        102: 'B 3',
-        103: 'B 3',
-        104: 'B 3',
-        105: 'B 3',
-        106: 'POL 5',
-        107: 'POL 5',
-        108: 'RD 2',
-        109: 'RD 2',
-        110: 'RD 1',
-        111: 'B 1',
-        112: 'B 1',
-        113: 'B 1',
-        114: 'THL 1',
-        115: 'RD 1',
-        116: 'POL 4',
-        117: 'POL 1',
-        118: 'POL 3',
-        119: 'POL 1',
-        120: 'THL 2',
-        1201:'THL 4',
-        121: 'THL 2',
-        1211:'THL 4',
-        122: 'THL 1',
-        123: 'THL 1',
-        124: 'THL 1',
-        125: 'THL 1',
-        126: 'THL 1',
-        127: 'THL 1',
-        128: 'POL 1',
-        129: 'B 1',
-        130: 'POL 2',
-        131: 'B 2',
-        132: 'B 2',
-        133: 'B 2',
-        134: 'B WALD',
-        135: 'B WALD',
-        136: 'B WALD',
-        137: 'B WALD',
-        138: 'B 2',
-        139: 'B 2',
-        140: 'B 2',
-        141: 'B 2',
-        142: 'B 3',
-        143: 'B 1',
-        144: 'B 1',
-        145: 'POL 1',
-        146: 'B 4',
-        147: 'RD KTP',
-        148: 'POL 1',
-        149: 'POL 1',
-        150: 'POL 1',
-        151: 'POL 1',
-        152: 'POL 2',
-        153: 'POL 1',
-        154: 'POL 1',
-        155: 'RD 1',
-        156: 'RD 1',
-        157: 'RD 2',
-        158: 'THL 1',
-        159: 'THL 1',
-        160: 'THL 1',
-        161: 'THL 1',
-        162: 'THL 1',
-        163: 'THL 1',
-        164: 'RD 1',
-        165: 'RD 1',
-        166: 'THL 1',
-        167: 'THL 1',
-        168: 'THL 1',
-        169: 'THL 1',
-        170: 'THL 1',
-        171: 'THL 1',
-        172: 'THL 1',
-        173: 'THL 1',
-        174: 'THW 1',
-        175: 'THW 1',
-        176: 'THW 1',
-        177: 'THL EINSTURZ',
-        178: 'ABC THL 3',
-        179: 'RD 2',
-        180: 'RD 2',
-        181: 'RD 2',
-        182: 'RD 1',
-        183: 'RD 1',
-        184: 'RD 1',
-        185: 'RD 1',
-        186: 'B 4',
-        187: 'B 3',
-        188: 'POL 1',
-        189: 'POL 1',
-        190: 'POL 1',
-        191: 'THL 1',
-        192: 'B ELEKTRO',
-        193: 'B ELEKTRO',
-        194: 'THL 1',
-        195: 'BP 1',
-        196: 'BP 1',
-        197: 'BP 1',
-        198: 'BP 1',
-        199: 'BP 1',
-        200: 'BP 2',
-        201: 'BP 3',
-        202: 'POL 1',
-        203: 'B 2',
-        204: 'B 4',
-        205: 'B 4',
-        206: 'B 5',
-        207: 'ABC 3',
-        208: 'ABC 2',
-        209: 'POL 1',
-        210: 'RD 2',
-        211: 'RD 1',
-        212: 'RD 1',
-        213: 'B EXPLOSION',
-        214: 'B 4',
-        215: 'ABC 3',
-        216: 'B 1',
-        217: 'B 1',
-        218: 'B 1',
-        219: 'B 1',
-        220: 'B 1',
-        221: 'THL VU ZUG',
-        222: 'THL VU ZUG',
-        223: 'SICHERHEITSWACHE',
-        224: 'SICHERHEITSWACHE',
-        225: 'SICHERHEITSWACHE',
-        226: 'VERKEHRSSICHERUNG',
-        227: 'ABSICHERUNG',
-        228: 'VERKEHRSSICHERUNG',
-        229: 'VERKEHRSSICHERUNG',
-        230: 'B 1',
-        231: 'POL 10',
-        232: 'POL 3',
-        233: 'POL 2',
-        234: 'THL BOMBENFUND',
-        235: 'THL P HÖHENRETTUNG',
-        236: 'THL P HÖHENRETTUNG',
-        237: 'THL ZUG',
-        238: 'THL 2',
-        2381:'THL 4',
-        239: 'THL 2',
-        2391:'THL 4',
-        240: 'ABC 1',
-        241: 'POL 1',
-        242: 'POL 3',
-        243: 'THL 1',
-        244: 'THL WASSER',
-        245: 'THL WASSER',
-        246: 'THL WASSER',
-        247: 'THL WASSER',
-        248: 'THL WASSER',
-        249: 'THL WASSER',
-        250: 'THL WASSER',
-        251: 'THL WASSER',
-        252: 'THL WASSER',
-        253: 'THL WASSER',
-        254: 'THL WASSER',
-        255: 'THL WASSER',
-        256: 'THL VU SCHIFF',
-        257: 'POL 2',
-        258: 'THL 3',
-        259: 'B 1',
-        260: 'B 1',
-        261: 'B 1',
-        262: 'B 3',
-        263: 'B 1',
-        264: 'B 3',
-        265: 'B 1',
-        266: 'B 1',
-        267: 'POL 1',
-        268: 'B 4',
-        269: 'POL 1',
-        270: 'POL 1',
-        271: 'THL ZUG',
-        272: 'ABC WASSER',
-        273: 'ABC WASSER',
-        274: 'RD 2',
-        275: 'ABSICHERUNG',
-        276: 'POL 4',
-        277: 'THL 1',
-        278: 'THL 2',
-        279: 'THL 2',
-        280: 'THL 3',
-        281: 'RD 2',
-        282: 'THL 1',
-        283: 'B 5',
-        284: 'POL 1',
-        285: 'POL 1',
-        286: 'THL EINSTURZ',
-        287: 'POL 1',
-        288: 'B 1',
-        289: 'THL 1',
-        290: 'B 2',
-        291: 'BP 3',
-        292: 'POL 1',
-        293: 'RD 1',
-        294: 'BP 9',
-        295: 'POL 6',
-        296: 'THL 2',
-        297: 'RD 1',
-        298: 'THL WASSER',
-        299: ''
-    }
 
-    I18n.translations.en['lssm']['missionKeyword'] = {
-        fw: 'FIRE',
-        thl: 'TECH',
-        abc: 'CBRN',
-        rd: 'MED',
-        ktp: 'MEDT',
-        pol: 'POL',
-        thw: 'TECH',
-        bp: 'POL',
-        0: 'FIRE 1',
-        1: 'FIRE 2',
-        2: 'FIRE 2',
-        3: 'FIRE 1',
-        4: 'FIRE 1',
-        5: 'FIRE 3',
-        6: 'FIRE 2',
-        7: 'FIRE 1',
-        8: 'FIRE 1',
-        9: 'FIRE 2',
-        10: 'FIRE 2',
-        11: 'FIRE 1',
-        12: 'TECH 1',
-        13: 'FIRE 3',
-        14: 'FIRE 2',
-        15: 'FIRE FOREST',
-        16: 'FIRE 2',
-        17: 'FIRE 1',
-        18: 'FIRE 1',
-        19: 'FIRE 2',
-        20: 'FIRE 3',
-        21: 'FIRE 3',
-        22: 'FIRE 3',
-        23: 'FIRE 3',
-        24: 'FIRE 1',
-        25: 'TECH 1',
-        26: 'FIRE 3',
-        27: 'TECH 1',
-        28: 'FIRE 3',
-        29: 'FIRE 3',
-        30: 'TECH 1',
-        31: 'TECH 1',
-        32: 'FIRE 3',
-        33: 'FIRE 3',
-        34: 'FIRE 3',
-        35: 'FIRE 4',
-        36: 'FIRE 4',
-        37: 'FIRE 1',
-        38: 'FIRE 1',
-        39: 'FIRE 1',
-        40: 'FIRE 1',
-        41: 'CBRN FIRE',
-        42: 'CBRN FIRE 4',
-        43: 'TECH 5',
-        44: 'MED 1',
-        45: 'MED 1',
-        46: 'MED 2',
-        47: 'MED 2',
-        48: 'MED 2',
-        49: 'MED 1',
-        50: 'MED 1',
-        51: 'FIRE 4',
-        52: 'FIRE 1',
-        53: 'TECH 1',
-        54: 'MED 1',
-        55: 'FIRE 1',
-        56: 'MED 1',
-        57: 'MED 1',
-        58: 'MED 1',
-        59: 'CBRN 3',
-        60: 'POL 1',
-        61: 'POL 1',
-        62: 'POL 1',
-        63: 'POL 1',
-        64: 'POL 1',
-        65: 'POL 1',
-        66: 'POL 1',
-        67: 'POL 1',
-        68: 'POL 1',
-        69: 'POL 1',
-        70: 'POL 1',
-        71: 'POL 1',
-        72: 'TECH RESCUE HEIGHT',
-        73: 'POL 3',
-        74: 'POL 1',
-        75: 'POL 7',
-        76: 'FIRE 3',
-        77: 'TECH HOUSE',
-        78: 'TECH 1',
-        79: 'TECH RESCUE HEIGHT',
-        80: 'FIRE 3',
-        81: 'POL 1',
-        82: 'POL 1',
-        83: 'CBRN TECH 3',
-        84: 'FIRE TRAIN',
-        85: 'POL 1',
-        86: 'FIRE 4',
-        87: 'TECH PLANE 1',
-        88: 'FIRE 1',
-        89: 'TECH 2',
-        891:'TECH 4',
-        90: 'TECH 1',
-        91: 'TECH 1',
-        92: 'MED 2',
-        93: 'FIRE 3',
-        94: 'TECH 1',
-        95: 'TECH 2',
-        96: 'FIRE 3',
-        97: 'CBRN OIL',
-        98: 'POL 1',
-        99: 'TECH PLANE 2',
-        100: 'FIRE 3',
-        101: 'FIRE 3',
-        102: 'FIRE 3',
-        103: 'FIRE 3',
-        104: 'FIRE 3',
-        105: 'FIRE 3',
-        106: 'POL 5',
-        107: 'POL 5',
-        108: 'MED 2',
-        109: 'MED 2',
-        110: 'MED 1',
-        111: 'FIRE 1',
-        112: 'FIRE 1',
-        113: 'FIRE 1',
-        114: 'TECH 1',
-        115: 'MED 1',
-        116: 'POL 4',
-        117: 'POL 1',
-        118: 'POL 3',
-        119: 'POL 1',
-        120: 'TECH 2',
-        1201:'TECH 4',
-        121: 'TECH 2',
-        1211:'TECH 4',
-        122: 'TECH 1',
-        123: 'TECH 1',
-        124: 'TECH 1',
-        125: 'TECH 1',
-        126: 'TECH 1',
-        127: 'TECH 1',
-        128: 'TECH 1',
-        129: 'FIRE 1',
-        130: 'POL 2',
-        131: 'FIRE 2',
-        132: 'FIRE 2',
-        133: 'FIRE 2',
-        134: 'FIRE FOREST',
-        135: 'FIRE FOREST',
-        136: 'FIRE FOREST',
-        137: 'FIRE FOREST',
-        138: 'FIRE 2',
-        139: 'FIRE 2',
-        140: 'FIRE 2',
-        141: 'FIRE 2',
-        142: 'FIRE 3',
-        143: 'FIRE 1',
-        144: 'FIRE 1',
-        145: 'POL 1',
-        146: 'FIRE 4',
-        147: 'MED TRANSPORT',
-        148: 'POL 1',
-        149: 'POL 1',
-        150: 'POL 1',
-        151: 'POL 1',
-        152: 'POL 2',
-        153: 'POL 1',
-        154: 'POL 1',
-        155: 'MED 1',
-        156: 'MED 1',
-        157: 'MED 2',
-        158: 'TECH 1',
-        159: 'TECH 1',
-        160: 'TECH 1',
-        161: 'TECH 1',
-        162: 'TECH 1',
-        163: 'TECH 1',
-        164: 'MED 1',
-        165: 'MED 1',
-        166: 'TECH 1',
-        167: 'TECH 1',
-        168: 'TECH 1',
-        169: 'TECH 1',
-        170: 'TECH 1',
-        171: 'TECH 1',
-        172: 'TECH 1',
-        173: 'TECH 1',
-        174: 'TECH 1',
-        175: 'TECH 1',
-        176: 'TECH 1',
-        177: 'TECH COLLAPSE',
-        178: 'CBRN TECH 3',
-        179: 'MED 2',
-        180: 'MED 2',
-        181: 'MED 2',
-        182: 'MED 1',
-        183: 'MED 1',
-        184: 'MED 1',
-        185: 'MED 1',
-        186: 'FIRE 4',
-        187: 'FIRE 3',
-        188: 'POL 1',
-        189: 'POL 1',
-        190: 'POL 1',
-        191: 'THL 1',
-        192: 'FIRE ELECTRICITY',
-        193: 'FIRE ELECTRICITY',
-        194: 'TECH 1',
-        195: 'BP 1',
-        196: 'BP 1',
-        197: 'BP 1',
-        198: 'BP 1',
-        199: 'BP 1',
-        200: 'BP 2',
-        201: 'BP 3',
-        202: 'POL 1',
-        203: 'FIRE 2',
-        204: 'FIRE 4',
-        205: 'FIRE 4',
-        206: 'FIRE 5',
-        207: 'CBRN 3',
-        208: 'CBRN 2',
-        209: 'POL 1',
-        210: 'MED 2',
-        211: 'MED 1',
-        212: 'MED 1',
-        213: 'FIRE EXPLOSION',
-        214: 'FIRE 4',
-        215: 'CBRN 3',
-        216: 'FIRE 1',
-        217: 'FIRE 1',
-        218: 'FIRE 1',
-        219: 'FIRE 1',
-        220: 'FIRE 1',
-        221: 'TECH TAIN',
-        222: 'TECH TAIN',
-        223: 'OVERWATCH',
-        224: 'OVERWATCH',
-        225: 'OVERWATCH',
-        226: 'TRAFFIC CONTROL',
-        227: 'SAFEGUARDING',
-        228: 'TRAFFIC HEDGING',
-        229: 'TRAFFIC HEDGING',
-        230: 'FIRE 1',
-        231: 'POL 10',
-        232: 'POL 3',
-        233: 'POL 2',
-        234: 'TECH BOMB',
-        235: 'TECH RESCUE HEIGHT',
-        236: 'TECH RESCUE HEIGHT',
-        237: 'TECH TRAIN',
-        238: 'TECH 2',
-        2381:'TECH 4',
-        239: 'TECH 2',
-        2391:'TECH 4',
-        240: 'CBRN 1',
-        241: 'POL 1',
-        242: 'POL 3',
-        243: 'TECH 1',
-        244: 'TECH WATER',
-        245: 'TECH WATER',
-        246: 'TECH WATER',
-        247: 'TECH WATER',
-        248: 'TECH WATER',
-        249: 'TECH WATER',
-        250: 'TECH WATER',
-        251: 'TECH WATER',
-        252: 'TECH WATER',
-        253: 'TECH WATER',
-        254: 'TECH WATER',
-        255: 'TECH WATER',
-        256: 'TECH VU SCHIFF',
-        257: 'POL 2',
-        258: 'TECH 3',
-        259: 'FIRE 1',
-        260: 'FIRE 1',
-        261: 'FIRE 1',
-        262: 'FIRE 3',
-        263: 'FIRE 1',
-        264: 'FIRE 3',
-        265: 'FIRE 1',
-        266: 'FIRE 1',
-        267: 'POL 1',
-        268: 'FIRE 4',
-        269: 'POL 1',
-        270: 'POL 1',
-        271: 'TECH TRAIN',
-        272: 'CBRN WATER',
-        273: 'CBRN WATER',
-        274: 'MED 2',
-        275: 'SAFEGUARDING',
-        276: 'POL 4',
-        277: 'TECH 1',
-        278: 'TECH 2',
-        279: 'TECH 2',
-        280: 'TECH 3',
-        281: 'MED 2',
-        282: 'TECH 1',
-        283: 'FIRE 5',
-        284: 'POL 1',
-        285: 'POL 1',
-        286: 'TECH COLLAPSE',
-        287: 'POL 1',
-        288: 'FIRE 1',
-        289: 'TECH 1',
-        290: 'FIRE 2',
-        291: 'BP 3',
-        292: 'POL 1',
-        293: 'MED 1',
-        294: 'BP 9',
-        295: 'POL 6',
-        296: 'TECH 2',
-        297: 'MED 1',
-        298: 'TECH WATER',
-        299: ''
-    }
+    var LSS_MISSIONKEYWORD_STORAGE = "LSS_MISSIONKEYWORD_STORAGE";
+    var VERSION = "1.0";
+    
+	function setSettings(){
 
-    I18n.translations.nl['lssm']['missionKeyword'] = {
-        fw: 'BRAND',
-        thl: 'HV',
-        abc: 'OGS',
-        rd: 'A1',
-        ktp: 'B1',
-        pol: 'P1',
-        thw: 'HV',
-        0: 'KLEINE BRAND',
-        1: 'KLEINE BRAND',
-        2: 'KLEINE BRAND',
-        3: 'KLEINE BRAND',
-        4: 'KLEINE NATUURBRAND',
-        5: 'MIDDEL BRAND',
-        6: 'MIDDEL BRAND',
-        7: 'KLEINE BRAND',
-        8: 'KLEINE BRAND',
-        9: 'KLEINE BRAND',
-        10: 'KLEINE BRAND',
-        11: 'KLEINE BRAND',
-        12: 'KLEINE HV',
-        13: 'MIDDEL BRAND',
-        14: 'MIDDEL NATUURBRAND',
-        15: 'KLEINE NATUURBRAND',
-        16: 'MIDDEL BRAND',
-        17: 'KLEINE BRAND',
-        18: 'KLEINE NATUURBRAND',
-        19: 'KLEINE BRAND',
-        20: 'GROTE BRAND',
-        21: 'KLEINE BRAND',
-        22: 'KLEINE BRAND',
-        23: 'MIDDEL BRAND',
-        24: 'KLEINE BRAND',
-        25: 'KLEINE HV',
-        26: 'GROTE BRAND',
-        27: 'KLEINE HV',
-        28: 'MIDDEL BRAND',
-        29: 'GROTE BRAND',
-        30: 'KLEINE HV',
-        31: 'KLEINE HV',
-        32: 'MIDDEL BRAND',
-        33: 'KLEINE BRAND',
-        34: 'MIDDEL BRAND',
-        35: 'MIDDEL BRAND',
-        36: 'GROTE BRAND',
-        37: 'KLEINE BRAND',
-        38: 'KLEINE BRAND',
-        39: 'KLEINE BRAND',
-        40: 'KLEINE BRAND',
-        41: 'ZEER GROTE BRAND',
-        42: 'ZEER GROTE BRAND',
-        43: 'ZEER GROTE HV, SIS 3',
-        44: 'KLEINE HV',
-        45: 'A1',
-        46: 'A1',
-        47: 'A1',
-        48: 'A1',
-        49: 'A1',
-        50: 'A1',
-        51: 'A1',
-        52: 'ZEER GROTE BRAND',
-        53: 'ZEER GROTE BRAND',
-        54: 'KLEINE BRAND',
-        55: 'MIDDEL BRAND',
-        56: 'ZEER GROTE BRAND',
-        57: 'KLEINE BRAND',
-        58: 'KLEINE BRAND',
-        59: 'ZEER GROTE BRAND',
-        60: 'MIDDEL BRAND',
-        61: 'KLEINE BRAND',
-        62: 'GROTE BRAND',
-        63: 'KLEINE BRAND',
-        64: 'MIDDEL BRAND',
-        65: 'KLEINE BRAND',
-        66: 'KLEINE HV',
-        67: 'KLEINE HV',
-        68: 'KLEINE HV',
-        69: 'KLEINE HV',
-        70: 'P1',
-        71: 'P1',
-        72: 'P1',
-        73: 'P 1',
-        74: 'P 1',
-        75: 'P 1',
-        76: 'MIDDEL HV, VOS 5',
-        77: 'MIDDEL HV, VOS 5',
-        78: 'KLEINE BRAND',
-        79: 'A1',
-        80: 'A1',
-        81: 'P1',
-        82: 'MIDDEL HV',
-        83: 'A1',
-        84: 'A1',
-        85: 'A1',
-        86: 'A1, TIS 3',
-        87: 'A1',
-        88: 'A1',
-        89: 'A1',
-        90: 'A1',
-        91: 'A1',
-        92: 'A1',
-        93: 'A1',
-        94: 'A1',
-        95: 'A1',
-        96: 'A1',
-        97: 'A1',
-        98: 'KLEIN 0GS',
-        99: 'KLEIN 0GS',
-        100: 'MIDDEL OGS',
-        101: 'KLEIN 0GS',
-        102: 'MIDDEL OGS, TIS 4',
-        103: 'KLEINE BRAND',
-        104: 'KLEINE BRAND',
-        105: 'KLEINE BRAND',
-        106: 'MIDDEL HV',
-        107: 'P 1',
-        108: 'MIDDEL HV, TIS 3',
-        109: 'MIDDEL HV, TIS 3',
-        110: 'KLEINE BRAND',
-        111: 'MIDDEL BRAND',
-        112: 'P1',
-        113: 'P1',
-        114: 'KLEINE BRAND',
-        115: 'MIDDEL BRAND',
-        116: 'GEPLAND',
-        117: 'GEPLAND',
-        118: 'GEPLAND',
-        119: 'GEPLAND',
-        120: 'GEPLAND',
-        1201:'GROTE HV',
-        121: 'GEPLAND',
-        1211:'GROTE HV',
-        122: 'P1',
-        123: 'P1',
-        124: 'P1',
-        125: 'P1',
-        126: 'KLEINE BRAND',
-        127: 'GROTE BRAND',
-        128: 'KLEINE NATUURBRAND',
-        129: 'GROTE NATUURBRAND',
-        130: 'MIDDEL BRAND',
-        131: 'GROTE BRAND',
-        132: 'KLEINE BRAND',
-        133: 'KLEINE BRAND',
-        134: 'KLEINE BRAND',
-        135: 'KLEINE BRAND',
-        136: 'KLEINE BRAND',
-        137: 'B1',
-        138: 'KLEINE BRAND',
-        139: 'MIDDEL NATUURBRAND',
-        140: 'MIDDEL NATUURBRAND',
-        141: 'GROTE NATUURBRAND',
-        142: 'ZEER GROTE NATUURBRAND',
-        143: 'ZEER GROTE NATUURBRAND',
-        144: 'ZEER GROTE NATUURBRAND',
-        145: 'ZEER GROTE NATUURBRAND',
-        146: 'KLEINE BRAND',
-        147: 'MIDDEL BRAND',
-        148: 'KLEINE BRAND',
-        149: 'KLEINE BRAND',
-        150: 'P1',
-        151: 'P1',
-        152: 'P1',
-        153: 'P1',
-        154: 'P1',
-        155: 'MIDDEL HV',
-        156: 'GROTE HV',
-        157: 'GROTE BRAND',
-        158: 'KLEINE BRAND',
-        159: 'GROTE BRAND',
-        160: 'KLEINE BRAND',
-        161: 'A1',
-        162: 'A1',
-        163: 'P1',
-        164: 'A1',
-        165: 'KLEINE HV',
-        166: 'P1',
-        167: 'P1',
-        168: 'A1',
-        169: 'KLEINE BRAND',
-        170: 'KLEINE BRAND',
-        171: 'KLEINE HV',
-        172: 'A1',
-        173: 'P1',
-        174: 'P1',
-        175: 'KLEINE BRAND',
-        176: 'A1',
-        177: 'A1',
-        178: 'P1',
-        179: 'A1',
-        180: 'KLEINE WO',
-        181: 'MIDDEL HV',
-        182: 'KLEINE WO',
-        183: 'KLEINE HV',
-        184: 'KLEINE HV',
-        185: 'KLEINE WO',
-        186: 'KLEINE HV',
-        187: 'KLEINE HV',
-        188: 'KLEINE HV',
-        189: 'KLEINE HV',
-        190: 'KLEINE HV',
-        191: 'KLEINE HV',
-        192: 'KLEINE HV',
-        193: 'KLEINE HV',
-        194: 'KLEINE HV',
-        195: 'KLEINE HV',
-        196: 'KLEINE BRAND',
-        197: 'KLEINE BRAND',
-        198: 'KLEINE BRAND',
-        199: 'P1',
-        200: 'P1',
-        201: 'P1',
-        202: 'P1',
-        203: 'MIDDEL OGS',
-        204: 'MIDDEL OGS',
-        205: 'MIDDEL WO',
-        206: 'MIDDEL WO',
-        207: 'KLEINE WO',
-        208: 'MIDDEL WO',
-        209: 'KLEINE WO',
-        210: 'MIDDEL WO',
-        211: 'GROTE WO',
-        212: 'KLEINE WO',
-        213: 'MIDDEL WO',
-        214: 'MIDDEL NATUURBRAND',
-        215: 'GROTE NATUURBRAND',
-        216: 'ZEER GROTE NATUURBRAND',
-        217: 'P1',
-        218: 'P1',
-        219: 'GEPLAND',
-        220: 'GEPLAND',
-        221: 'P1',
-        222: 'P1',
-        223: 'MIDDEL BRAND',
-        224: 'KLEINE BRAND',
-        225: 'A1',
-        226: 'A1',
-        227: 'P1',
-        228: 'P1',
-        229: 'MISSING',
-        230: 'MISSING',
-        231: 'MISSING',
-        232: 'MISSING',
-        233: 'MISSING',
-        234: 'MISSING',
-        235: 'MISSING',
-        236: 'MISSING',
-        237: 'MISSING',
-        238: 'MISSING',
-        2381:'MISSING',
-        239: 'MISSING',
-        2391:'MISSING',
-        240: 'MISSING',
-        241: 'MISSING',
-        242: 'MISSING',
-        243: 'MISSING',
-        244: 'MISSING',
-        245: 'MISSING',
-        246: 'MISSING',
-        247: 'MISSING',
-        248: 'MISSING',
-        249: 'MISSING',
-        250: 'MISSING',
-        251: 'MIDDEL WO',
-        252: 'MIDDEL WO',
-        253: 'MIDDEL WO',
-        254: 'MIDDEL WO',
-        255: 'MIDDEL WO',
-        256: 'GROTE WO',
-        257: 'P 1',
-        258: 'GROTE HV',
-        259: 'KLEINE BRAND',
-        260: 'KLEINE BRAND',
-        261: 'MIDDEL NATUURBRAND',
-        262: 'MIDDEL BRAND',
-        263: 'KLEINE BRAND',
-        264: 'MIDDEL BRAND',
-        265: 'KLEINE BRAND',
-        266: 'KLEINE BRAND',
-        267: 'P 1',
-        268: 'GROTE BRAND',
-        269: 'P 1',
-        270: 'P 1',
-        271: 'THL ZUG',
-        272: 'MIDDEL WO',
-        273: 'MIDDEL WO',
-        274: 'A 1',
-        275: 'P 2',
-        276: 'P 1',
-        277: 'KLEINE HV',
-        278: 'MIDDEL HV',
-        279: 'MIDDEL HV',
-        280: 'GROTE HV',
-        281: 'A 1',
-        282: 'KLEINE HV',
-        283: 'ZEER GROTE BRAND',
-        284: 'P 1',
-        285: 'P 1',
-        286: 'MIDDEL HV',
-        287: 'P 1',
-        288: 'KLEINE BRAND',
-        289: 'KLEINE HV',
-        290: 'MIDDEL BRAND',
-        291: 'P 1',
-        292: 'P 1',
-        293: 'A 1',
-        294: 'P 1',
-        295: 'P 1',
-        296: 'MIDDEL HV',
-        297: 'A 1',
-        298: 'MIDDEL WO',
-        299: ''
-    }
+	    I18n.translations.de['lssm']['missionKeywordDefaults'] = {	
+	        name: 'Einsatzstichworte',
+	        settingsName: 'Einsatzstichworte - Einstellungen',
+	        domain: 'leitstellenspiel.de',
+	        fw: 'B ',
+	        thl: 'THL',
+	        abc: 'ABC',
+	        rd: 'RD',
+	        ktp: 'KTP',
+	        pol: 'POL',
+	        thw: 'THW',
+	        bp: 'BP ',
+	        bma: 'BMA',
+	        bmaLong: 'Brandmeldeanlage',
+	        show: "Ein-/Ausblenden",
+	        keywords: {
+	            0:'Mülleimerbrand',
+	            1:'Containerbrand',
+	            2:'Brennender PKW',
+	            3:'Motorrad-Brand',
+	            4:'Brennendes Gras',
+	            5:'Zimmerbrand',
+	            6:'Gartenlaubenbrand',
+	            7:'Brennendes Laub',
+	            8:'Sperrmüllbrand',
+	            9:'Strohballen Brand',
+	            10:'Traktor Brand',
+	            11:'Brennende Telefonzelle',
+	            12:'Baum auf Straße',
+	            13:'Brennender LKW',
+	            14:'Kleiner Feldbrand',
+	            15:'Kleiner Waldbrand',
+	            16:'Wohnwagenbrand',
+	            17:'Brand in Briefkasten',
+	            18:'Brennendes Gebüsch',
+	            19:'Brennender Anhänger',
+	            20:'Kellerbrand',
+	            21:'Schornsteinbrand',
+	            22:'Dachstuhlbrand',
+	            23:'Fettbrand in Pommesbude',
+	            24:'Brennendes Bus-Häuschen',
+	            25:'Verkehrsunfall',
+	            26:'Brand im Supermarkt',
+	            27:'Auffahrunfall',
+	            28:'Garagenbrand',
+	            29:'Maschinenbrand',
+	            30:'Große Ölspur',
+	            31:'Auslaufende Betriebsstoffe',
+	            32:'Kaminbrand',
+	            33:'Mähdrescher Brand',
+	            34:'Brand im Supermarkt',
+	            35:'Feuer im Krankenhaus',
+	            36:'Brennender Güterwaggon',
+	            37:'Mülleimerbrand',
+	            38:'Mülleimerbrand',
+	            39:'Mülleimerbrand',
+	            40:'Mülleimerbrand',
+	            41:'Großbrand',
+	            42:'Tankstellenbrand',
+	            43:'Massenkarambolage',
+	            44:'Alkoholintoxikation',
+	            45:'Nasenbluten unstillbar',
+	            46:'Herzinfarkt',
+	            47:'akuter Asthma-Anfall',
+	            48:'Krampfanfall',
+	            49:'Fieber',
+	            50:'Gestürzte Person',
+	            51:'Brand in Werkstatt',
+	            52:'Brand auf Weihnachtsmarkt',
+	            53:'Verkehrsunfall durch Glatteis',
+	            54:'Personenschaden durch Verbrennung',
+	            55:'Brennender Tannenbaum',
+	            56:'Betrunkene Person auf Weihnachtsmarkt',
+	            57:'Gestürzter Fußgänger',
+	            58:'Gestürzter Radfahrer',
+	            59:'Gefahrgutunfall',
+	            60:'Ladendiebstahl',
+	            61:'Ladendiebstahl',
+	            62:'Parkendes Auto gerammt',
+	            63:'Parkendes Auto gerammt',
+	            64:'Metalldiebstahl',
+	            65:'Taschendiebstahl',
+	            66:'Notebook aus Schule entwendet',
+	            67:'Personalienaufnahme von Schwarzfahrer',
+	            68:'Personalienaufnahme von Schwarzfahrer',
+	            69:'Personalienaufnahme von Schwarzfahrer',
+	            70:'Personalienaufnahme von Schwarzfahrer',
+	            71:'Parkendes Auto gerammt',
+	            72:'Bewusstloser Kranführer',
+	            73:'Schlägerei',
+	            74:'Randalierende Person',
+	            75:'Unangemeldete Demonstration',
+	            76:'Küchenbrand',
+	            77:'Person hinter Tür',
+	            78:'Kleintier in Not',
+	            79:'Verletzte Person auf Baugerüst',
+	            80:'Rauchentwicklung in Museum',
+	            81:'Einbruch in Keller',
+	            82:'Einbruch in Wohnung',
+	            83:'Gefahrgut-LKW verunglückt',
+	            84:'Brennende Lok',
+	            85:'Sachbeschädigung',
+	            86:'Sporthallenbrand',
+	            87:'Kleinflugzeug abgestürzt',
+	            88:'Brennender Bollerwagen',
+	            89:'LKW Auffahrunfall',
+	            90:'Ruhestörung',
+	            91:'Keller unter Wasser',
+	            92:'Schlaganfall',
+	            93:'Brennender Bus',
+	            94:'Kleine Ölspur',
+	            95:'Ausgedehnte Ölspur',
+	            96:'Feuer in Schnellrestaurant',
+	            97:'Aufgerissener Öltank',
+	            98:'Angefahrene Person',
+	            99:'Flugzeug abgestürzt',
+	            100:'Küchenbrand',
+	            101:'Zimmerbrand',
+	            102:'Feuer in Einfamilienhaus',
+	            103:'Feuer in Einfamilienhaus',
+	            104:'Feuer in Einfamilienhaus',
+	            105:'Feuer in Einfamilienhaus',
+	            106:'Massenschlägerei',
+	            107:'Massenschlägerei',
+	            108:'Schwangere in Notsituation',
+	            109:'Beginnende Geburt',
+	            110:'Vaginale Blutung',
+	            111:'Brennende Vogelscheuche',
+	            112:'Brennendes Kürbisfeld',
+	            113:'Kürbissuppe übergekocht',
+	            114:'Hexe hängt in Baum',
+	            115:'Zombiebiss',
+	            116:'Monster ausgebrochen',
+	            117:'Kürbisse geklaut',
+	            118:'Frankenstein gesichtet',
+	            119:'Süßigkeitendiebstahl',
+	            120:'LKW umgestürzt',
+	            121:'LKW umgestürzt',
+	            122:'Motorradunfall',
+	            123:'Verkehrsunfall',
+	            124:'Verkehrsunfall',
+	            125:'Verkehrsunfall',
+	            126:'Verkehrsunfall',
+	            127:'Verkehrsunfall',
+	            128:'Auffahrunfall',
+	            129:'Brennender Adventskranz',
+	            130:'Rangelei auf Weihnachtsmarkt',
+	            131:'Mittlerer Feldbrand',
+	            132:'Großer Feldbrand',
+	            133:'Großer Feldbrand',
+	            134:'Großer Waldbrand',
+	            135:'Großer Waldbrand',
+	            136:'Großfeuer im Wald',
+	            137:'Großfeuer im Wald',
+	            138:'Flächenbrand',
+	            139:'Flächenbrand',
+	            140:'Flächenbrand',
+	            141:'Flächenbrand',
+	            142:'Feuer auf Balkon',
+	            143:'Brennende Papiercontainer',
+	            144:'Brennende Hecke',
+	            145:'Trunkenheitsfahrt',
+	            146:'Brennendes Reetdachhaus',
+	            147:'Krankentransport',
+	            148:'Ampelausfall',
+	            149:'Pannenfahrzeug',
+	            150:'Hausfriedensbruch',
+	            151:'Raub',
+	            152:'Häusliche Gewalt',
+	            153:'Hilflose Person',
+	            154:'Hilflose Person',
+	            155:'Akuter Harnstau',
+	            156:'Harnleiter Blutung',
+	            157:'Herzrhythmusstörungen',
+	            158:'Tiefgarage unter Wasser',
+	            159:'Äste auf Fahrbahn',
+	            160:'Umherfliegendes Baumaterial',
+	            161:'Baum auf PKW',
+	            162:'Baum auf PKW',
+	            163:'Baum auf Dach',
+	            164:'Kopfplatzwunde',
+	            165:'Gehirnerschütterung',
+	            166:'Fassadenteile drohen zu fallen',
+	            167:'Beschädigter Dachbereich',
+	            168:'Baum auf Gleisen',
+	            169:'Baum auf Gleisen',
+	            170:'Baum auf Gleisen',
+	            171:'Parkdeck voll Wasser gelaufen',
+	            172:'Straße unter Wasser',
+	            173:'Straße unter Wasser',
+	            174:'Erdrutsch',
+	            175:'Erdrutsch',
+	            176:'LKW in Hauswand',
+	            177:'Eingestürztes Wohnhaus',
+	            178:'Gefahrgut-LKW verunglückt',
+	            179:'Schädelverletzung',
+	            180:'Wirbelsäulenverletzung',
+	            181:'Sturz aus Höhe',
+	            182:'Sturz aus Höhe',
+	            183:'Sonnenstich',
+	            184:'Hitzschlag',
+	            185:'Hitzekrampf',
+	            186:'Lagerhallenbrand',
+	            187:'Feuer im Lagerraum',
+	            188:'Personenkontrolle',
+	            189:'Verkehrsbehinderung',
+	            190:'Diebstahl aus Kfz',
+	            191:'Baum auf Radweg',
+	            192:'Brennende Trafostation',
+	            193:'Brennende Trafostation',
+	            194:'Person unter Baum eingeklemmt',
+	            195:'Schwerpunkteinsatz Tageswohnungseinbrüche',
+	            196:'Schwerpunkteinsatz Verkehrsüberwachung',
+	            197:'Präsenzeinsatz Volksfest',
+	            198:'Jugendschutzkontrolle in Diskothek',
+	            199:'Geländedurchsuchung nach Beweismittel',
+	            200:'Geplante Razzia',
+	            201:'Fußball Bundesliga-Spiel',
+	            202:'Diebstahl auf Weihnachtsmarkt',
+	            203:'Brennende Weihnachtsmarktbude',
+	            204:'Scheunenbrand',
+	            205:'Feuer auf Bauernhof - Mittel',
+	            206:'Feuer auf Bauernhof - Groß',
+	            207:'Gefahrgutunfall - Groß',
+	            208:'Leck in Chemikalientank',
+	            209:'Fahrraddiebstahl',
+	            210:'Unfall mit Motorsäge',
+	            211:'Unterzuckerung',
+	            212:'Akute Bauchschmerzen',
+	            213:'Gasexplosion',
+	            214:'Bürobrand',
+	            215:'Chlorgasaustritt',
+	            216:'Brennender Bollerwagen',
+	            217:'Brennender Bollerwagen',
+	            218:'Brennender Bollerwagen',
+	            219:'Brennender Bollerwagen',
+	            220:'Brennender Bollerwagen',
+	            221:'Zugunglück (Groß)',
+	            222:'Zugunglück (Klein)',
+	            223:'Brandsicherheitswache bei Volksfest',
+	            224:'Brandsicherheitswachdienst im Theater',
+	            225:'Dorf/Stadtfest',
+	            226:'Volkslauf',
+	            227:'Angemeldete Demonstration',
+	            228:'Absicherung Musikumzug',
+	            229:'Absicherung Radrennen',
+	            230:'Feuerprobealarm an Schule',
+	            231:'Entflohener Gefangener',
+	            232:'Kabeldiebstahl',
+	            233:'Suche nach Vermissten',
+	            234:'Entschärfung von Weltkriegsbombe',
+	            235:'Verletzte Person auf Hochspannungsmast',
+	            236:'Verletzte Person auf Hochspannungsmast',
+	            237:'Verkehrsunfall mit Zug',
+	            238:'Verkehrsunfall mit Linienbus',
+	            239:'Verkehrsunfall mit Linienbus',
+	            240:'Gasgeruch',
+	            241:'Wildunfall',
+	            242:'Pfefferspray in Schule',
+	            243:'Reitunfall mit Pkw',
+	            244:'Person in Wasser',
+	            245:'Person in Wasser',
+	            246:'Person in Wasser',
+	            247:'Pkw in Wasser',
+	            248:'LKW in Wasser',
+	            249:'Bus in Wasser',
+	            250:'Person in Wasser',
+	            251:'Person in Wasser',
+	            252:'Person in Wasser',
+	            253:'Pkw in Wasser',
+	            254:'LKW in Wasser',
+	            255:'Bus in Wasser',
+	            256:'Zusammenstoß zweier Boote',
+	            257:'Verkehrsüberwachung',
+	            258:'Baumaschine umgestürzt',
+	            259:'Brennender PKW durch Feuerwerkskörper',
+	            260:'Sperrmüllbrand durch Feuerwerkskörper',
+	            261:'Kleiner Feldbrand durch Feuerwerkskörper',
+	            262:'Kellerbrand durch Feuerwerkskörper',
+	            263:'Brennendes Bus-Häuschen durch Feuerwerkskörper',
+	            264:'Feuer auf Balkon durch Feuerwerkskörper',
+	            265:'Brennende Papiercontainer durch Feuerwerkskörper',
+	            266:'Brennende Hecke durch Feuerwerkskörper',
+	            267:'Trunkenheitsfahrt nach Silvesterparty',
+	            268:'Brennendes Reetdachhaus durch Feuerwerkskörper',
+	            269:'Kfz durch Feuerwerkskörper beschädigt',
+	            270:'Verstoß gegen Sprengstoffverordnung',
+	            271:'Beschädigter Kesselwagen',
+	            272:'Gewässerverschmutzung durch Öl',
+	            273:'Gewässerverschmutzung durch Öl',
+	            274:'Bewusstlose Person',
+	            275:'Absicherung Rockkonzert',
+	            276:'Schwertransport',
+	            277:'Person im Aufzug',
+	            278:'LKW in Supermarkt',
+	            279:'LKW in Supermarkt',
+	            280:'Baum auf Oberleitung',
+	            281:'Stromschlag',
+	            282:'Geplatzte Wasserleitung',
+	            283:'Bürobrand (Groß)',
+	            284:'Ostereier-Dieb',
+	            285:'Pinsel aus Werkstatt entwendet',
+	            286:'Eingestürzter Hasenbau',
+	            287:'Angefahrener Osterhase',
+	            288:'Brennendes Osternest',
+	            289:'Schokoladenspur auf Strasse',
+	            290:'Eierkocherbrand',
+	            291:'Hasentreffen in Ostereistedt',
+	            292:'Tankbetrug',
+	            293:'Bluthochdruck',
+	            294:'Fußball Bundesliga-Risikospiel',
+	            295:'Tankstellenüberfall',
+	            296:'Gasunfall in Werkstatt',
+	            297:'Arbeitsunfall im Garten',
+	            298:'Hilflose Person auf Wasser',
+	            299:'Strohballen qualmen in Scheune'
+	        }
+	    };
+	    I18n.translations.en['lssm']['missionKeywordDefaults'] = {	
+	        name: 'Mission Keywords',
+	        settingsName: 'Mission Keywords - Settings',
+	        domain: 'missionchief.com',
+	        fw: 'FIRE',
+	        thl: 'TECH',
+	        abc: 'CBRN',
+	        rd: 'MED',
+	        ktp: 'MEDT',
+	        pol: 'POL',
+	        thw: 'TECH',
+	        bp: 'POL',
+	        bma: 'FAS',
+	        bmaLong: 'Fire Alarm System',
+	        show: 'Show/Hide',
+	        keywords: {
+	            0: 'Bin fire',
+	            1: 'Container fire',
+	            2: 'Burning car',
+	            3: 'Burning motorbike',
+	            4: 'Burning grass',
+	            5: 'Room fire',
+	            6: 'Garden shed fire',
+	            7: 'Burning leaves',
+	            8: 'Bulk trash fire',
+	            9: 'Bale of straw fire',
+	            10: 'Tractor fire',
+	            11: 'Burning callbox',
+	            12: 'Tree on the road',
+	            13: 'Burning truck',
+	            14: 'Little field fire',
+	            15: 'Little wildfire',
+	            16: 'Caravan fire',
+	            17: 'Mailbox on fire',
+	            18: 'Brush pile',
+	            19: 'Burning trailer',
+	            20: 'Basement fire',
+	            21: 'Chimney fire',
+	            22: 'Roof fire',
+	            23: 'Grease Fire',
+	            24: 'Burning bus shelter',
+	            25: 'Road accident',
+	            26: 'Garage fire',
+	            27: 'Gas Leak',
+	            28: 'Fireplace fire',
+	            29: 'Harvester fire',
+	            30: 'Wastebin fire',
+	            31: 'Wastebin fire',
+	            32: 'Wastebin fire',
+	            33: 'Wastebin fire',
+	            34: 'Alcoholic intoxication',
+	            35: 'Nosebleed',
+	            36: 'Cardiac infarction',
+	            37: 'Acute asthma',
+	            38: 'Seizure',
+	            39: 'Fever',
+	            40: 'Fallen person',
+	            41: 'Major fire',
+	            42: 'Manhole Fire',
+	            43: 'Diabetic problems',
+	            44: 'Burning machine',
+	            45: 'Burning locomotive',
+	            46: 'Gas station fire',
+	            47: 'Dangerous goods truck accident',
+	            48: 'Shoplifting',
+	            49: 'Shoplifting',
+	            50: 'Parked car accident',
+	            51: 'Parked car accident',
+	            52: 'Metal burglary',
+	            53: 'Pickpocketing',
+	            54: 'Fare dodger',
+	            55: 'Fare dodger',
+	            56: 'Fare dodger',
+	            57: 'Fare dodger',
+	            58: 'Parked car accident',
+	            59: 'Brawl',
+	            60: 'Rioter',
+	            61: 'Unannounced demonstration',
+	            62: 'Pile-up',
+	            63: 'Burning bogle',
+	            64: 'Burning pumpkin field',
+	            65: 'Pumpkin soup overcooked',
+	            66: 'Witch in tree',
+	            67: 'Zombie bite',
+	            68: 'Erupted Monster',
+	            69: 'Pumpkin stolen',
+	            70: 'Frankenstein sighted',
+	            71: 'candy theft',
+	            72: 'Person check',
+	            73: 'Obstruction of traffic',
+	            74: 'Theft of property from vehicles',
+	            75: 'Tree on bikeway',
+	            76: 'Burning substation',
+	            77: 'Burning substation',
+	            78: 'Person under tree',
+	            79: 'Theft at christmas market',
+	            80: 'Burning christmas market stall',
+	            81: 'Fire at christmas market',
+	            82: 'Traffic accident - ice',
+	            83: 'Burning christmas tree',
+	            84: 'Burning advent wreath',
+	            85: 'Brawl at christmas market',
+	            86: 'MVA Rollover',
+	            87: 'Industrial Fire',
+	            88: 'Building Collapse',
+	            89: 'Trench Rescue',
+	            90: 'Officer Down',
+	            91: 'Concert',
+	            92: 'Soccer Game',
+	            93: 'Baseball Game',
+	            94: 'Prisoner Escape',
+	            95: 'Fleeing Suspect',
+	            96: 'Missing Person',
+	            97: 'Warrant Standby',
+	            98: 'Unknown Tanker Spill',
+	            99: 'Commercial Fire',
+	            100: 'Animal Attack',
+	            101: 'Unknown Tanker Spill',
+	            102: 'High Rise Fire',
+	            103: 'Domestic Dispute',
+	            104: 'Hostage Taken',
+	            105: 'Active Shooter',
+	            106: 'High-Risk Warrant',
+	            107: 'Drug Warrant',
+	            108: 'Anaphylaxis',
+	            109: 'Noise Complaint',
+	            110: 'Residential Fire',
+	            111: 'Stabbing',
+	            112: 'Bomb Explosion',
+	            113: 'Smoke in Cabin',
+	            114: 'Smoke in Cabin',
+	            115: 'Braking Overheat',
+	            116: 'Braking Overheat',
+	            117: 'Engine Fire',
+	            118: 'Engine Fire',
+	            119: 'Food Poisoning',
+	            120: 'Large Aircraft Crash',
+	            121: 'Aircraft Hijack',
+	            122: 'Carbon Monoxide Alarm',
+	            123: 'Bank Robbery',
+	            124: 'Shooting',
+	            125: 'Vehicle Accident - Entrapment',
+	            126: 'Overdose',
+	            127: 'Fire in an Office Building',
+	            128: 'Aggressive Passenger',
+	            129: 'Aggressive Passenger',
+	            130: 'Powerline Down'
+	        }
+	    };
+	    I18n.translations.nl['lssm']['missionKeywordDefaults'] = {
+	        name: 'Steekwoorden bij meldingen',
+	        settingsName: 'Steekwoorden bij meldingen - Instellingen',
+	        domain: 'meldkamerspel.com',
+	        fw: 'BRAND',
+	        thl: 'HV',
+	        abc: 'OGS',
+	        rd: 'A 1',
+	        ktp: 'B 1',
+	        pol: 'P 1',
+	        thw: 'HV',
+	        bp: 'POL',
+	        bma: 'OMS',
+	        bmaLong: 'OMS',
+	        show: 'Verberg/toon',		
+	        keywords: {
+	            0: 'Brandende afvalbak',
+	            1: 'Brandende container',
+	            2: 'Brandende personenauto',
+	            3: 'Brandende motorfiets',
+	            4: 'Brandend gras',
+	            5: 'Brand in woonkamer',
+	            6: 'Brand in tuinhuis',
+	            7: 'Brandende boom',
+	            8: 'Brandend afval',
+	            9: 'Brandend hooi',
+	            10: 'Brandende traktor',
+	            11: 'Brandende bromfiets',
+	            12: 'Boom op de weg',
+	            13: 'Brandende vrachtwagen',
+	            14: 'Heidebrand',
+	            15: 'Bosbrand',
+	            16: 'Brand in woonwagen',
+	            17: 'Brandende dixi',
+	            18: 'Brandende struik',
+	            19: 'Brandende aanhangwagen',
+	            20: 'Brand in kelder',
+	            21: 'Schoorsteenbrand',
+	            22: 'Brandend dak',
+	            23: 'Brand in cafetaria',
+	            24: 'Brandend bushokje',
+	            25: 'Verkeersongeval met beknelling',
+	            26: 'Brand in supermarkt',
+	            27: 'Persoon aangereden',
+	            28: 'Brand in landbouwschuur',
+	            29: 'Machine brand',
+	            30: 'Lekkende dieseltank',
+	            31: 'Oliespoor',
+	            32: 'Schoorsteenbrand woning met rietenkap',
+	            33: 'Brandende landbouwmachine',
+	            34: 'Brand in supermarkt',
+	            35: 'Brand in ziekenhuis',
+	            36: 'Brandende goederenwagon',
+	            37: 'Brandende afvalbak',
+	            38: 'Brandende afvalbak',
+	            39: 'Brandende afvalbak',
+	            40: 'Brandende afvalbak',
+	            41: 'Brand in kantoorpand',
+	            42: 'Brand in tankstation',
+	            43: 'Kettingbotsing',
+	            44: 'Liftopsluiting',
+	            45: 'Overdosis alcohol',
+	            46: 'Bloedneus',
+	            47: 'Pijn op de borst',
+	            48: 'Astma aanval',
+	            49: 'Beroerte',
+	            50: 'Koortsstuip',
+	            51: 'Gevallen persoon',
+	            52: 'Brand in garagebedrijf',
+	            53: 'Brand in sporthal',
+	            54: 'Brand in sporthal',
+	            55: 'Brand in sporthal',
+	            56: 'Brand in sporthal',
+	            57: 'Kat in boom',
+	            58: 'Buitenbrand',
+	            59: 'Brand in opslagloods',
+	            60: 'Brand in slaapkamer',
+	            61: 'Brand in slaapkamer',
+	            62: 'Brand in keuken',
+	            63: 'Brand in keuken',
+	            64: 'Brand in keuken',
+	            65: 'Takken op de weg',
+	            66: 'Boom op fietspad',
+	            67: 'Omgewaaide bouwsteiger',
+	            68: 'Boom op auto',
+	            69: 'Persoon bekneld onder boom',
+	            70: 'Winkeldiefstal',
+	            71: 'Winkeldiefstal',
+	            72: 'Winkeldiefstal',
+	            73: 'Tasjesdief',
+	            74: 'Huiselijk geweld',
+	            75: 'Bestuurder onder invloed',
+	            76: 'Klein vliegtuig neergestort',
+	            77: 'Klein vliegtuig neergestort',
+	            78: 'Rookontwikkeling in winkel',
+	            79: 'Gevallen fietser',
+	            80: 'Allergische reactie',
+	            81: 'Verward persoon',
+	            82: 'Vrachtwagen gekanteld',
+	            83: 'Val van hoogte (> 5m)',
+	            84: 'Ernstige brandwonden',
+	            85: 'Aanrijding voetganger (> 30km/h)',
+	            86: 'Aanrijding door trein',
+	            87: 'Beginnende geboorte',
+	            88: 'Hersenbloeding',
+	            89: 'Nek- wervelletsel',
+	            90: 'Ontwrichting',
+	            91: 'Psychiatrisch beeld',
+	            92: 'Botbreuk',
+	            93: 'Gebroken rib',
+	            94: 'Hoofdletsel',
+	            95: 'Hyperventilatie',
+	            96: 'Hittekramp',
+	            97: 'Hoofdwond',
+	            98: 'Vreemde lucht',
+	            99: 'Stankoverlast',
+	            100: 'Ammoniakalarm in opslagloods',
+	            101: 'Koolmonoxide vrijgekomen',
+	            102: 'Lekkende goederenwagon',
+	            103: 'Schoorsteenbrand',
+	            104: 'Brandgerucht',
+	            105: 'Buitensluiting',
+	            106: 'Schaap in sloot',
+	            107: 'Persoon bekneld in machine',
+	            108: 'Ongeval met trein en personenauto',
+	            109: 'Ongeval met trein en persoon',
+	            110: 'Brand in vakantiewoning',
+	            111: 'Brand in vakantiewoning',
+	            112: 'Overval winkel',
+	            113: 'Overval winkel',
+	            114: 'Brandend dak',
+	            115: 'Brandend dak',
+	            116: 'Voetbalwedstrijd',
+	            117: 'Voetbalwedstrijd, risicowedstrijd',
+	            118: 'Hardloopevenement',
+	            119: 'Begeleiding orkest',
+	            120: 'Begeleiding wielrenners',
+	            121: 'Test brandalarm school',
+	            122: 'Overval winkel',
+	            123: 'Overval winkel',
+	            124: 'Achtervolging personenauto',
+	            125: 'Vermist persoon',
+	            126: 'Brand in landbouwschuur',
+	            127: 'Brand in landbouwschuur',
+	            128: 'Heidebrand',
+	            129: 'Heidebrand',
+	            130: 'Brand in cafetaria',
+	            131: 'Brand in cafetaria',
+	            132: 'Brandende bus',
+	            133: 'Brandende bestelwagen',
+	            134: 'Brandende haag',
+	            135: 'Brandende papiercontainer',
+	            136: 'Brandende caravan',
+	            137: 'Besteld vervoer',
+	            138: 'Brand in meterkast',
+	            139: 'Natuurbrand',
+	            140: 'Natuurbrand',
+	            141: 'Natuurbrand',
+	            142: 'Natuurbrand',
+	            143: 'Natuurbrand',
+	            144: 'Natuurbrand',
+	            145: 'Natuurbrand',
+	            146: 'Brandende vogelverschrikker',
+	            147: 'Brandend pompoenveld',
+	            148: 'Overkookte pompoensoep',
+	            149: 'Heks vast in boom',
+	            150: 'Monster uitgebroken',
+	            151: 'Gestolen pompoenen',
+	            152: 'Frankenstein gespot',
+	            153: 'Snoep diefstal',
+	            154: 'Horrorclown gespot',
+	            155: 'Gaslekkage',
+	            156: 'Gaslekkage',
+	            157: 'Brand in ziekenhuis',
+	            158: 'Brand in ziekenhuis',
+	            159: 'Brand in sporthal',
+	            160: 'Brandende cadeautjes',
+	            161: 'Sinterklaas van dak gegleden',
+	            162: 'Pepernoot op hoofd',
+	            163: 'Piet bestolen',
+	            164: 'Kind geschrokken',
+	            165: 'Piet klem in schoorsteen',
+	            166: 'Demonstratie zwarte piet',
+	            167: 'Schoenen dief',
+	            168: 'Verstikking in pepernoot',
+	            169: 'Brandende kerstboom',
+	            170: 'Brandende kerstboom',
+	            171: 'Verkeersongeval door gladheid',
+	            172: 'Gevallen kerstman',
+	            173: 'Ruzie op de kerstmarkt',
+	            174: 'Diefstal op de kerstmarkt',
+	            175: 'Brandende kerstmarktkraam',
+	            176: 'Gevallen schaatser',
+	            177: 'Gevallen persoon door gladheid',
+	            178: 'Donkere dagen offensief',
+	            179: 'Snijwond door gebroken kerstbal',
+	            180: 'Bergen object uit water voor politie',
+	            181: 'Verkeersongeval met beknelling',
+	            182: 'Personenauto in sloot',
+	            183: 'Paard in sloot',
+	            184: 'Eend verstrikt in visdraad',
+	            185: 'Verlaten kinderfiets langs waterkant',
+	            186: 'Parkeergarage onder water',
+	            187: 'Kelder onder water',
+	            188: 'Gevaarlijk hangende tak',
+	            189: 'Boom op dak',
+	            190: 'Straat onder water',
+	            191: 'Losgewaaide dakbedekking',
+	            192: 'Parkeerterrein onder water',
+	            193: 'Koe in sloot',
+	            194: 'Koe in gierput',
+	            195: 'Lekkende woonboot',
+	            196: 'Brand in woonwagen',
+	            197: 'Brandende vrachtwagen',
+	            198: 'Brand in woonkamer',
+	            199: 'Inbraak in woning',
+	            200: 'Drugslab aangetroffen',
+	            201: 'Vechtpartij in café',
+	            202: 'Steekincident',
+	            203: 'Verkeersongeval met gevaarlijke stoffen',
+	            204: 'Verkeersongeval met gevaarlijke stoffen',
+	            205: 'Persoon te water',
+	            206: 'Persoon te water',
+	            207: 'Personenauto te water',
+	            208: 'Personenauto te water',
+	            209: 'Aanvaring met vrachtschip en motorboot',
+	            210: 'Aanvaring met vrachtschip en motorboot',
+	            211: 'Aanvaring met vrachtschip en motorboot',
+	            212: 'Omgeslagen zeilboot',
+	            213: 'Omgeslagen zeilboot',
+	            214: 'Bosbrand',
+	            215: 'Bosbrand',
+	            216: 'Bosbrand',
+	            217: 'Plofkraak',
+	            218: 'Plofkraak',
+	            219: 'Open dag, klein',
+	            220: 'Open dag, groot',
+	            221: 'Inval in woning',
+	            222: 'Inbraak in woning',
+	            223: 'Brand in kelder',
+	            224: 'Brand in kelder',
+	            225: 'Benauwdheid',
+	            226: 'Val van trap',
+	            227: 'Assistentie treinconducteur',
+	            228: 'Assistentie treinconducteur',
+	            229: 'Brand in tankstation'
+	        }
+	    };	
+	    
+	    var managedSettings = {
+	        "id": LSS_MISSIONKEYWORD_STORAGE,
+	        "title": I18n.t('lssm.missionKeywordDefaults.name'),
+	        "version": VERSION,
+	        "settings": {
+	            "missionKeywordShowHideButton" : {
+	                "default" : "",
+	                "ui" : {
+	                    "label" : I18n.t('lssm.missionKeywordDefaults.show'),
+	                    "type" : "button",
+	                    "custom_function_event" : "click",
+	                    "custom_function" : function() {			
+	                        $('[id^='+LSS_MISSIONKEYWORD_STORAGE+'_missionKeyword-]').toggle();					
+	                    }
+	                }
+	            }			
+	        }
+	    };
 	
-	//Farben für das Label
-    var color_fw       = 'red';
-    var color_pol      = '#00de13';
-    var color_rd       = '#ff90a4';
-    var color_thw      = '#03a8f9';
-    var color_sonst    = '#03a8f9';
-
-	//Stichwort Element
-    var title_stichwort = document.getElementById('missionH1');
-	
-	//Anzahl Patientenbalken
-    var anzahl_patients = document.getElementsByClassName("patient_progress").length;
-    var aao_text = '';
-	
-	//Link für Hilfe (wird für ID benötigt)
-    var help_el = document.getElementById('mission_help');
-    var help = "";
-    if (help_el !== null)
-        help = help_el.href;
-
-    var tmp_arr = help.split('/');
-    var length = tmp_arr.length;
-
-    var mission_id = Number(tmp_arr[length-1]);
-
-    switch(mission_id)
-    {
-        case 0:
-            aao_text = I18n.t('lssm.missionKeyword.0');
-            break;
-        case 1:
-            aao_text = I18n.t('lssm.missionKeyword.1');
-            break;
-        case 2:
-            aao_text = I18n.t('lssm.missionKeyword.2');
-            break;
-        case 3:
-            aao_text = I18n.t('lssm.missionKeyword.3');
-            break;
-        case 4:
-            aao_text = I18n.t('lssm.missionKeyword.4');
-            break;
-        case 5:
-            aao_text = I18n.t('lssm.missionKeyword.5');
-            break;
-        case 6:
-            aao_text = I18n.t('lssm.missionKeyword.6');
-            break;
-        case 7:
-            aao_text = I18n.t('lssm.missionKeyword.7');
-            break;
-        case 8:
-            aao_text = I18n.t('lssm.missionKeyword.8');
-            break;
-        case 9:
-            aao_text = I18n.t('lssm.missionKeyword.9');
-            break;
-        case 10:
-            aao_text = I18n.t('lssm.missionKeyword.10');
-            break;
-        case 11:
-            aao_text = I18n.t('lssm.missionKeyword.11');
-            break;
-        case 12:
-            aao_text = I18n.t('lssm.missionKeyword.12');
-            break;
-        case 13:
-            aao_text = I18n.t('lssm.missionKeyword.13');
-            break;
-        case 14:
-            aao_text = I18n.t('lssm.missionKeyword.14');
-            break;
-        case 15:
-            aao_text = I18n.t('lssm.missionKeyword.15');
-            break;
-        case 16:
-            aao_text = I18n.t('lssm.missionKeyword.16');
-            break;
-        case 17:
-            aao_text = I18n.t('lssm.missionKeyword.17');
-            break;
-        case 18:
-            aao_text = I18n.t('lssm.missionKeyword.18');
-            break;
-        case 19:
-            aao_text = I18n.t('lssm.missionKeyword.19');
-            break;
-        case 20:
-            aao_text = I18n.t('lssm.missionKeyword.20');
-            break;
-        case 21:
-            aao_text = I18n.t('lssm.missionKeyword.21');
-            break;
-        case 22:
-            aao_text = I18n.t('lssm.missionKeyword.22');
-            break;
-        case 23:
-            aao_text = I18n.t('lssm.missionKeyword.23');
-            break;
-        case 24:
-            aao_text = I18n.t('lssm.missionKeyword.24');
-            break;
-        case 25:
-            aao_text = I18n.t('lssm.missionKeyword.25');
-            break;
-        case 26:
-            aao_text = I18n.t('lssm.missionKeyword.26');
-            break;
-        case 27:
-            aao_text = I18n.t('lssm.missionKeyword.27');
-            break;
-        case 28:
-            aao_text = I18n.t('lssm.missionKeyword.28');
-            break;
-        case 29:
-            aao_text = I18n.t('lssm.missionKeyword.29');
-            break;
-        case 30:
-            aao_text = I18n.t('lssm.missionKeyword.30');
-            break;
-        case 31:
-            aao_text = I18n.t('lssm.missionKeyword.31');
-            break;
-        case 32:
-            aao_text = I18n.t('lssm.missionKeyword.32');
-            break;
-        case 33:
-            aao_text = I18n.t('lssm.missionKeyword.33');
-            break;
-        case 34:
-            aao_text = I18n.t('lssm.missionKeyword.34');
-            break;
-        case 35:
-            aao_text = I18n.t('lssm.missionKeyword.35');
-            break;
-        case 36:
-            aao_text = I18n.t('lssm.missionKeyword.36');
-            break;
-        case 37:
-            aao_text = I18n.t('lssm.missionKeyword.37');
-            break;
-        case 38:
-            aao_text = I18n.t('lssm.missionKeyword.38');
-            break;
-        case 39:
-            aao_text = I18n.t('lssm.missionKeyword.39');
-            break;
-        case 40:
-            aao_text = I18n.t('lssm.missionKeyword.40');
-            break;
-        case 41:
-            aao_text = I18n.t('lssm.missionKeyword.41');
-            break;
-        case 42:
-            aao_text = I18n.t('lssm.missionKeyword.42');
-            break;
-        case 43:
-            aao_text = I18n.t('lssm.missionKeyword.43');
-            break;
-        case 44:
-            aao_text = I18n.t('lssm.missionKeyword.44');
-            break;
-        case 45:
-            aao_text = I18n.t('lssm.missionKeyword.45');
-            break;
-        case 46:
-            aao_text = I18n.t('lssm.missionKeyword.46');
-            break;
-        case 47:
-            aao_text = I18n.t('lssm.missionKeyword.47');
-            break;
-        case 48:
-            aao_text = I18n.t('lssm.missionKeyword.48');
-            break;
-        case 49:
-            aao_text = I18n.t('lssm.missionKeyword.49');
-            break;
-        case 50:
-            aao_text = I18n.t('lssm.missionKeyword.50');
-            break;
-        case 51:
-            aao_text = I18n.t('lssm.missionKeyword.51');
-            break;
-        case 52:
-            aao_text = I18n.t('lssm.missionKeyword.52');
-            break;
-        case 53:
-            aao_text = I18n.t('lssm.missionKeyword.53');
-            break;
-        case 54:
-            aao_text = I18n.t('lssm.missionKeyword.54');
-            break;
-        case 55:
-            aao_text = I18n.t('lssm.missionKeyword.55');
-            break;
-        case 56:
-            aao_text = I18n.t('lssm.missionKeyword.56');
-            break;
-        case 57:
-            aao_text = I18n.t('lssm.missionKeyword.57');
-            break;
-        case 58:
-            aao_text = I18n.t('lssm.missionKeyword.58');
-            break;
-        case 59:
-            aao_text = I18n.t('lssm.missionKeyword.59');
-            break;
-        case 60:
-            aao_text = I18n.t('lssm.missionKeyword.60');
-            break;
-        case 61:
-            aao_text = I18n.t('lssm.missionKeyword.61');
-            break;
-        case 62:
-            aao_text = I18n.t('lssm.missionKeyword.62');
-            break;
-        case 63:
-            aao_text = I18n.t('lssm.missionKeyword.63');
-            break;
-        case 64:
-            aao_text = I18n.t('lssm.missionKeyword.64');
-            break;
-        case 65:
-            aao_text = I18n.t('lssm.missionKeyword.65');
-            break;
-        case 66:
-            aao_text = I18n.t('lssm.missionKeyword.66');
-            break;
-        case 67:
-            aao_text = I18n.t('lssm.missionKeyword.67');
-            break;
-        case 68:
-            aao_text = I18n.t('lssm.missionKeyword.68');
-            break;
-        case 69:
-            aao_text = I18n.t('lssm.missionKeyword.69');
-            break;
-        case 70:
-            aao_text = I18n.t('lssm.missionKeyword.70');
-            break;
-        case 71:
-            aao_text = I18n.t('lssm.missionKeyword.71');
-            break;
-        case 72:
-            aao_text = I18n.t('lssm.missionKeyword.72');
-            break;
-        case 73:
-            aao_text = I18n.t('lssm.missionKeyword.73');
-            break;
-        case 74:
-            aao_text = I18n.t('lssm.missionKeyword.74');
-            break;
-        case 75:
-            aao_text = I18n.t('lssm.missionKeyword.75');
-            break;
-        case 76:
-            aao_text = I18n.t('lssm.missionKeyword.76');
-            break;
-        case 77:
-            aao_text = I18n.t('lssm.missionKeyword.77');
-            break;
-        case 78:
-            aao_text = I18n.t('lssm.missionKeyword.78');
-            break;
-        case 79:
-            aao_text = I18n.t('lssm.missionKeyword.79');
-            break;
-        case 80:
-            aao_text = I18n.t('lssm.missionKeyword.80');
-            break;
-        case 81:
-            aao_text = I18n.t('lssm.missionKeyword.81');
-            break;
-        case 82:
-            aao_text = I18n.t('lssm.missionKeyword.82');
-            break;
-        case 83:
-            aao_text = I18n.t('lssm.missionKeyword.83');
-            break;
-        case 84:
-            aao_text = I18n.t('lssm.missionKeyword.84');
-            break;
-        case 85:
-            aao_text = I18n.t('lssm.missionKeyword.85');
-            break;
-        case 86:
-            aao_text = I18n.t('lssm.missionKeyword.86');
-            break;
-        case 87:
-            aao_text = I18n.t('lssm.missionKeyword.87');
-            break;
-        case 88:
-            aao_text = I18n.t('lssm.missionKeyword.88');
-            break;
-        case 89:
-            aao_text = I18n.t('lssm.missionKeyword.89');
-            if(anzahl_patients > 0)
-                aao_text = I18n.t('lssm.missionKeyword.891');
-            break;
-        case 90:
-            aao_text = I18n.t('lssm.missionKeyword.90');
-            break;
-        case 91:
-            aao_text = I18n.t('lssm.missionKeyword.91');
-            break;
-        case 92:
-            aao_text = I18n.t('lssm.missionKeyword.92');
-            break;
-        case 93:
-            aao_text = I18n.t('lssm.missionKeyword.93');
-            break;
-        case 94:
-            aao_text = I18n.t('lssm.missionKeyword.94');
-            break;
-        case 95:
-            aao_text = I18n.t('lssm.missionKeyword.95');
-            break;
-        case 96:
-            aao_text = I18n.t('lssm.missionKeyword.96');
-            break;
-        case 97:
-            aao_text = I18n.t('lssm.missionKeyword.97');
-            break;
-        case 98:
-            aao_text = I18n.t('lssm.missionKeyword.98');
-            break;
-        case 99:
-            aao_text = I18n.t('lssm.missionKeyword.99');
-            break;
-        case 100:
-            aao_text = I18n.t('lssm.missionKeyword.100');
-            break;
-        case 101:
-            aao_text = I18n.t('lssm.missionKeyword.101');
-            break;
-        case 102:
-            aao_text = I18n.t('lssm.missionKeyword.102');
-            break;
-        case 103:
-            aao_text = I18n.t('lssm.missionKeyword.103');
-            break;
-        case 104:
-            aao_text = I18n.t('lssm.missionKeyword.104');
-            break;
-        case 105:
-            aao_text = I18n.t('lssm.missionKeyword.105');
-            break;
-        case 106:
-            aao_text = I18n.t('lssm.missionKeyword.106');
-            break;
-        case 107:
-            aao_text = I18n.t('lssm.missionKeyword.107');
-            break;
-        case 108:
-            aao_text = I18n.t('lssm.missionKeyword.108');
-            break;
-        case 109:
-            aao_text = I18n.t('lssm.missionKeyword.109');
-            break;
-        case 110:
-            aao_text = I18n.t('lssm.missionKeyword.110');
-            break;
-        case 111:
-            aao_text = I18n.t('lssm.missionKeyword.111');
-            break;
-        case 112:
-            aao_text = I18n.t('lssm.missionKeyword.112');
-            break;
-        case 113:
-            aao_text = I18n.t('lssm.missionKeyword.113');
-            break;
-        case 114:
-            aao_text = I18n.t('lssm.missionKeyword.114');
-            break;
-        case 115:
-            aao_text = I18n.t('lssm.missionKeyword.115');
-            break;
-        case 116:
-            aao_text = I18n.t('lssm.missionKeyword.116');
-            break;
-        case 117:
-            aao_text = I18n.t('lssm.missionKeyword.117');
-            break;
-        case 118:
-            aao_text = I18n.t('lssm.missionKeyword.118');
-            break;
-        case 119:
-            aao_text = I18n.t('lssm.missionKeyword.119');
-            break;
-        case 120:
-            aao_text = I18n.t('lssm.missionKeyword.120');
-            if(anzahl_patients > 0)
-            {
-                aao_text = I18n.t('lssm.missionKeyword.1201');
-            }
-            break;
-        case 121:
-            aao_text = I18n.t('lssm.missionKeyword.121');
-            if(anzahl_patients > 0)
-            {
-                aao_text = I18n.t('lssm.missionKeyword.1211');
-            }
-            break;
-        case 122:
-            aao_text = I18n.t('lssm.missionKeyword.122');
-            break;
-        case 123:
-            aao_text = I18n.t('lssm.missionKeyword.123');
-            break;
-        case 124:
-            aao_text = I18n.t('lssm.missionKeyword.124');
-            break;
-        case 125:
-            aao_text = I18n.t('lssm.missionKeyword.125');
-            break;
-        case 126:
-            aao_text = I18n.t('lssm.missionKeyword.126');
-            break;
-        case 127:
-            aao_text = I18n.t('lssm.missionKeyword.127');
-            break;
-        case 128:
-            aao_text = I18n.t('lssm.missionKeyword.128');
-            break;
-        case 129:
-            aao_text = I18n.t('lssm.missionKeyword.129');
-            break;
-        case 130:
-            aao_text = I18n.t('lssm.missionKeyword.130');
-            break;
-        case 131:
-            aao_text = I18n.t('lssm.missionKeyword.131');
-            break;
-        case 132:
-            aao_text = I18n.t('lssm.missionKeyword.132');
-            break;
-        case 133:
-            aao_text = I18n.t('lssm.missionKeyword.133');
-            break;
-        case 134:
-            aao_text = I18n.t('lssm.missionKeyword.134');
-            break;
-        case 135:
-            aao_text = I18n.t('lssm.missionKeyword.135');
-            break;
-        case 136:
-            aao_text = I18n.t('lssm.missionKeyword.136');
-            break;
-        case 137:
-            aao_text = I18n.t('lssm.missionKeyword.137');
-            break;
-        case 138:
-            aao_text = I18n.t('lssm.missionKeyword.138');
-            break;
-        case 139:
-            aao_text = I18n.t('lssm.missionKeyword.139');
-            break;
-        case 140:
-            aao_text = I18n.t('lssm.missionKeyword.140');
-            break;
-        case 141:
-            aao_text = I18n.t('lssm.missionKeyword.141');
-            break;
-        case 142:
-            aao_text = I18n.t('lssm.missionKeyword.142');
-            break;
-        case 143:
-            aao_text = I18n.t('lssm.missionKeyword.143');
-            break;
-        case 144:
-            aao_text = I18n.t('lssm.missionKeyword.144');
-            break;
-        case 145:
-            aao_text = I18n.t('lssm.missionKeyword.145');
-            break;
-        case 146:
-            aao_text = I18n.t('lssm.missionKeyword.146');
-            break;
-        case 147:
-            aao_text = I18n.t('lssm.missionKeyword.147');
-            break;
-        case 148:
-            aao_text = I18n.t('lssm.missionKeyword.148');
-            break;
-        case 149:
-            aao_text = I18n.t('lssm.missionKeyword.149');
-            break;
-        case 150:
-            aao_text = I18n.t('lssm.missionKeyword.150');
-            break;
-        case 151:
-            aao_text = I18n.t('lssm.missionKeyword.151');
-            break;
-        case 152:
-            aao_text = I18n.t('lssm.missionKeyword.152');
-            break;
-        case 153:
-            aao_text = I18n.t('lssm.missionKeyword.153');
-            break;
-        case 154:
-            aao_text = I18n.t('lssm.missionKeyword.154');
-            break;
-        case 155:
-            aao_text = I18n.t('lssm.missionKeyword.155');
-            break;
-        case 156:
-            aao_text = I18n.t('lssm.missionKeyword.156');
-            break;
-        case 157:
-            aao_text = I18n.t('lssm.missionKeyword.157');
-            break;
-        case 158:
-            aao_text = I18n.t('lssm.missionKeyword.158');
-            break;
-        case 159:
-            aao_text = I18n.t('lssm.missionKeyword.159');
-            break;
-        case 160:
-            aao_text = I18n.t('lssm.missionKeyword.160');
-            break;
-        case 161:
-            aao_text = I18n.t('lssm.missionKeyword.161');
-            break;
-        case 162:
-            aao_text = I18n.t('lssm.missionKeyword.162');
-            break;
-        case 163:
-            aao_text = I18n.t('lssm.missionKeyword.163');
-            break;
-        case 164:
-            aao_text = I18n.t('lssm.missionKeyword.164');
-            break;
-        case 165:
-            aao_text = I18n.t('lssm.missionKeyword.165');
-            break;
-        case 166:
-            aao_text = I18n.t('lssm.missionKeyword.166');
-            break;
-        case 167:
-            aao_text = I18n.t('lssm.missionKeyword.167');
-            break;
-        case 168:
-            aao_text = I18n.t('lssm.missionKeyword.168');
-            break;
-        case 169:
-            aao_text = I18n.t('lssm.missionKeyword.169');
-            break;
-        case 170:
-            aao_text = I18n.t('lssm.missionKeyword.170');
-            break;
-        case 171:
-            aao_text = I18n.t('lssm.missionKeyword.171');
-            break;
-        case 172:
-            aao_text = I18n.t('lssm.missionKeyword.172');
-            break;
-        case 173:
-            aao_text = I18n.t('lssm.missionKeyword.173');
-            break;
-        case 174:
-            aao_text = I18n.t('lssm.missionKeyword.174');
-            break;
-        case 175:
-            aao_text = I18n.t('lssm.missionKeyword.175');
-            break;
-        case 176:
-            aao_text = I18n.t('lssm.missionKeyword.176');
-            break;
-        case 177:
-            aao_text = I18n.t('lssm.missionKeyword.177');
-            break;
-        case 178:
-            aao_text = I18n.t('lssm.missionKeyword.178');
-            break;
-        case 179:
-            aao_text = I18n.t('lssm.missionKeyword.179');
-            break;
-        case 180:
-            aao_text = I18n.t('lssm.missionKeyword.180');
-            break;
-        case 181:
-            aao_text = I18n.t('lssm.missionKeyword.181');
-            break;
-        case 182:
-            aao_text = I18n.t('lssm.missionKeyword.182');
-            break;
-        case 183:
-            aao_text = I18n.t('lssm.missionKeyword.183');
-            break;
-        case 184:
-            aao_text = I18n.t('lssm.missionKeyword.184');
-            break;
-        case 185:
-            aao_text = I18n.t('lssm.missionKeyword.185');
-            break;
-        case 186:
-            aao_text = I18n.t('lssm.missionKeyword.186');
-            break;
-        case 187:
-            aao_text = I18n.t('lssm.missionKeyword.187');
-            break;
-        case 188:
-            aao_text = I18n.t('lssm.missionKeyword.188');
-            break;
-        case 189:
-            aao_text = I18n.t('lssm.missionKeyword.189');
-            break;
-        case 190:
-            aao_text = I18n.t('lssm.missionKeyword.190');
-            break;
-        case 191:
-            aao_text = I18n.t('lssm.missionKeyword.191');
-            break;
-        case 192:
-            aao_text = I18n.t('lssm.missionKeyword.192');
-            break;
-        case 193:
-            aao_text = I18n.t('lssm.missionKeyword.193');
-            break;
-        case 194:
-            aao_text = I18n.t('lssm.missionKeyword.194');
-            break;
-        case 195:
-            aao_text = I18n.t('lssm.missionKeyword.195');
-            break;
-        case 196:
-            aao_text = I18n.t('lssm.missionKeyword.196');
-            break;
-        case 197:
-            aao_text = I18n.t('lssm.missionKeyword.197');
-            break;
-        case 198:
-            aao_text = I18n.t('lssm.missionKeyword.198');
-            break;
-        case 199:
-            aao_text = I18n.t('lssm.missionKeyword.199');
-            break;
-        case 200:
-            aao_text = I18n.t('lssm.missionKeyword.200');
-            break;
-        case 201:
-            aao_text = I18n.t('lssm.missionKeyword.201');
-            break;
-        case 202:
-            aao_text = I18n.t('lssm.missionKeyword.202');
-            break;
-        case 203:
-            aao_text = I18n.t('lssm.missionKeyword.203');
-            break;
-        case 204:
-            aao_text = I18n.t('lssm.missionKeyword.204');
-            break;
-        case 205:
-            aao_text = I18n.t('lssm.missionKeyword.205');
-            break;
-        case 206:
-            aao_text = I18n.t('lssm.missionKeyword.206');
-            break;
-        case 207:
-            aao_text = I18n.t('lssm.missionKeyword.207');
-            break;
-        case 208:
-            aao_text = I18n.t('lssm.missionKeyword.208');
-            break;
-        case 209:
-            aao_text = I18n.t('lssm.missionKeyword.209');
-            break;
-        case 210:
-            aao_text = I18n.t('lssm.missionKeyword.210');
-            break;
-        case 211:
-            aao_text = I18n.t('lssm.missionKeyword.211');
-            break;
-        case 212:
-            aao_text = I18n.t('lssm.missionKeyword.212');
-            break;
-        case 213:
-            aao_text = I18n.t('lssm.missionKeyword.213');
-            break;
-        case 214:
-            aao_text = I18n.t('lssm.missionKeyword.214');
-            break;
-        case 215:
-            aao_text = I18n.t('lssm.missionKeyword.215');
-            break;
-        case 216:
-            aao_text = I18n.t('lssm.missionKeyword.216');
-            break;
-        case 217:
-            aao_text = I18n.t('lssm.missionKeyword.217');
-            break;
-        case 218:
-            aao_text = I18n.t('lssm.missionKeyword.218');
-            break;
-        case 219:
-            aao_text = I18n.t('lssm.missionKeyword.219');
-            break;
-        case 221:
-            aao_text = I18n.t('lssm.missionKeyword.220');
-            break;
-        case 221:
-            aao_text = I18n.t('lssm.missionKeyword.221');
-            break;
-        case 222:
-            aao_text = I18n.t('lssm.missionKeyword.222');
-            break;
-        case 223:
-            aao_text = I18n.t('lssm.missionKeyword.223');
-            break;
-        case 224:
-            aao_text = I18n.t('lssm.missionKeyword.224');
-            break;
-        case 225:
-            aao_text = I18n.t('lssm.missionKeyword.225');
-            break;
-        case 226:
-            aao_text = I18n.t('lssm.missionKeyword.226');
-            break;
-        case 227:
-            aao_text = I18n.t('lssm.missionKeyword.227');
-            break;
-        case 228:
-            aao_text = I18n.t('lssm.missionKeyword.228');
-            break;
-        case 229:
-            aao_text = I18n.t('lssm.missionKeyword.229');
-            break;
-        case 230:
-            aao_text = I18n.t('lssm.missionKeyword.230');
-            break;
-        case 231:
-            aao_text = I18n.t('lssm.missionKeyword.231');
-            break;
-        case 232:
-            aao_text = I18n.t('lssm.missionKeyword.232');
-            break;
-        case 233:
-            aao_text = I18n.t('lssm.missionKeyword.233');
-            break;
-        case 234:
-            aao_text = I18n.t('lssm.missionKeyword.234');
-            break;
-        case 235:
-            aao_text = I18n.t('lssm.missionKeyword.235');
-            break;
-        case 236:
-            aao_text = I18n.t('lssm.missionKeyword.236');
-            break;
-        case 237:
-            aao_text = I18n.t('lssm.missionKeyword.237');
-            break;
-        case 238:
-            aao_text = I18n.t('lssm.missionKeyword.238');
-            if(anzahl_patients > 0)
-            {
-                aao_text = I18n.t('lssm.missionKeyword.2381');
-            }
-            break;
-        case 239:
-            aao_text = I18n.t('lssm.missionKeyword.239');
-            if(anzahl_patients > 0)
-            {
-                aao_text = I18n.t('lssm.missionKeyword.2391');
-            }
-            break;
-        case 240:
-            aao_text = I18n.t('lssm.missionKeyword.240');
-            break;
-        case 241:
-            aao_text = I18n.t('lssm.missionKeyword.241');
-            break;
-        case 242:
-            aao_text = I18n.t('lssm.missionKeyword.242');
-            break;
-        case 243:
-            aao_text = I18n.t('lssm.missionKeyword.243');
-            break;
-        case 244:
-            aao_text = I18n.t('lssm.missionKeyword.244');
-            break;
-        case 245:
-            aao_text = I18n.t('lssm.missionKeyword.245');
-            break;
-        case 246:
-            aao_text = I18n.t('lssm.missionKeyword.246');
-            break;
-        case 247:
-            aao_text = I18n.t('lssm.missionKeyword.247');
-            break;
-        case 248:
-            aao_text = I18n.t('lssm.missionKeyword.248');
-            break;
-        case 249:
-            aao_text = I18n.t('lssm.missionKeyword.249');
-            break;
-        case 250:
-            aao_text = I18n.t('lssm.missionKeyword.250');
-            break;
-        case 251:
-            aao_text = I18n.t('lssm.missionKeyword.251');
-            break;
-        case 252:
-            aao_text = I18n.t('lssm.missionKeyword.252');
-            break;
-        case 253:
-            aao_text = I18n.t('lssm.missionKeyword.253');
-            break;
-        case 254:
-            aao_text = I18n.t('lssm.missionKeyword.254');
-            break;
-        case 255:
-            aao_text = I18n.t('lssm.missionKeyword.255');
-            break;
-        case 256:
-            aao_text = I18n.t('lssm.missionKeyword.256');
-            break;
-        case 257:
-            aao_text = I18n.t('lssm.missionKeyword.257');
-            break;
-        case 258:
-            aao_text = I18n.t('lssm.missionKeyword.258');
-            break;
-        case 259:
-            aao_text = I18n.t('lssm.missionKeyword.259');
-            break;
-        case 260:
-            aao_text = I18n.t('lssm.missionKeyword.260');
-            break;
-        case 261:
-            aao_text = I18n.t('lssm.missionKeyword.261');
-            break;
-        case 262:
-            aao_text = I18n.t('lssm.missionKeyword.262');
-            break;
-        case 263:
-            aao_text = I18n.t('lssm.missionKeyword.263');
-            break;
-        case 264:
-            aao_text = I18n.t('lssm.missionKeyword.264');
-            break;
-        case 265:
-            aao_text = I18n.t('lssm.missionKeyword.265');
-            break;
-        case 266:
-            aao_text = I18n.t('lssm.missionKeyword.266');
-            break;
-        case 267:
-            aao_text = I18n.t('lssm.missionKeyword.267');
-            break;
-        case 268:
-            aao_text = I18n.t('lssm.missionKeyword.268');
-            break;
-        case 269:
-            aao_text = I18n.t('lssm.missionKeyword.269');
-            break;
-        case 270:
-            aao_text = I18n.t('lssm.missionKeyword.270');
-            break;
-        case 271:
-            aao_text = I18n.t('lssm.missionKeyword.271');
-            break;
-        case 272:
-            aao_text = I18n.t('lssm.missionKeyword.272');
-            break;
-        case 273:
-            aao_text = I18n.t('lssm.missionKeyword.273');
-            break;
-        case 274:
-            aao_text = I18n.t('lssm.missionKeyword.274');
-            break;
-        case 275:
-            aao_text = I18n.t('lssm.missionKeyword.275');
-            break;
-        case 276:
-            aao_text = I18n.t('lssm.missionKeyword.276');
-            break;
-        case 277:
-            aao_text = I18n.t('lssm.missionKeyword.277');
-            break;
-        case 278:
-            aao_text = I18n.t('lssm.missionKeyword.278');
-            break;
-        case 279:
-            aao_text = I18n.t('lssm.missionKeyword.279');
-            break;
-        case 280:
-            aao_text = I18n.t('lssm.missionKeyword.280');
-            break;
-        case 281:
-            aao_text = I18n.t('lssm.missionKeyword.281');
-            break;
-        case 282:
-            aao_text = I18n.t('lssm.missionKeyword.282');
-            break;
-        case 283:
-            aao_text = I18n.t('lssm.missionKeyword.283');
-            break;
-        case 284:
-            aao_text = I18n.t('lssm.missionKeyword.284');
-            break;
-        case 285:
-            aao_text = I18n.t('lssm.missionKeyword.285');
-            break;
-        case 286:
-            aao_text = I18n.t('lssm.missionKeyword.286');
-            break;
-        case 287:
-            aao_text = I18n.t('lssm.missionKeyword.287');
-            break;
-        case 288:
-            aao_text = I18n.t('lssm.missionKeyword.288');
-            break;
-        case 289:
-            aao_text = I18n.t('lssm.missionKeyword.289');
-            break;
-        case 290:
-            aao_text = I18n.t('lssm.missionKeyword.290');
-            break;
-        case 291:
-            aao_text = I18n.t('lssm.missionKeyword.291');
-            break;
-        case 292:
-            aao_text = I18n.t('lssm.missionKeyword.292');
-            break;
-        case 293:
-            aao_text = I18n.t('lssm.missionKeyword.293');
-            break;
-        case 294:
-            aao_text = I18n.t('lssm.missionKeyword.294');
-            break;
-        case 295:
-            aao_text = I18n.t('lssm.missionKeyword.295');
-            break;
-        case 296:
-            aao_text = I18n.t('lssm.missionKeyword.296');
-            break;
-        case 297:
-            aao_text = I18n.t('lssm.missionKeyword.297');
-            break;
-        case 298:
-            aao_text = I18n.t('lssm.missionKeyword.298');
-            break;
-        case 299:
-            aao_text = I18n.t('lssm.missionKeyword.299');
-            break;
+	// Einsatz-ID zu Stichwort
+	    var DEFAULT_AAO_DE = {
+	        0: 'B 1',
+	        1: 'B 2',
+	        2: 'B 2',
+	        3: 'B 1',
+	        4: 'B 1',
+	        5: 'B 3',
+	        6: 'B 2',
+	        7: 'B 1',
+	        8: 'B 1',
+	        9: 'B 2',
+	        10: 'B 2',
+	        11: 'B 1',
+	        12: 'THL 1',
+	        13: 'B 3',
+	        14: 'B 2',
+	        15: 'B WALD',
+	        16: 'B 2',
+	        17: 'B 1',
+	        18: 'B 1',
+	        19: 'B 2',
+	        20: 'B 3',
+	        21: 'B 2',
+	        22: 'B 3',
+	        23: 'B 3',
+	        24: 'B 1',
+	        25: 'THL 1',
+	        26: 'B 3',
+	        27: 'THL 1',
+	        28: 'B 3',
+	        29: 'B 3',
+	        30: 'THL 1',
+	        31: 'THL 1',
+	        32: 'B 2',
+	        33: 'B 3',
+	        34: 'B 3',
+	        35: 'B 4',
+	        36: 'B 4',
+	        37: 'B 1',
+	        38: 'B 1',
+	        39: 'B 1',
+	        40: 'B 1',
+	        41: 'ABC B',
+	        42: 'ABC B 4',
+	        43: 'THL 5',
+	        44: 'RD 1',
+	        45: 'RD 1',
+	        46: 'RD 2',
+	        47: 'RD 2',
+	        48: 'RD 2',
+	        49: 'RD 1',
+	        50: 'RD 1',
+	        51: 'B 4',
+	        52: 'B 1',
+	        53: 'THL 1',
+	        54: 'RD 1',
+	        55: 'B 1',
+	        56: 'RD 1',
+	        57: 'RD 1',
+	        58: 'RD 1',
+	        59: 'ABC 3',
+	        60: 'POL 1',
+	        61: 'POL 1',
+	        62: 'POL 1',
+	        63: 'POL 1',
+	        64: 'POL 1',
+	        65: 'POL 1',
+	        66: 'POL 1',
+	        67: 'POL 1',
+	        68: 'POL 1',
+	        69: 'POL 1',
+	        70: 'POL 1',
+	        71: 'POL 1',
+	        72: 'THL P HÖHENRETTUNG',
+	        73: 'POL 3',
+	        74: 'POL 1',
+	        75: 'POL 7',
+	        76: 'B 3',
+	        77: 'THL P WOHNUNG',
+	        78: 'THL 1',
+	        79: 'THL P HÖHENRETTUNG',
+	        80: 'B 3',
+	        81: 'POL 1',
+	        82: 'POL 1',
+	        83: 'ABC THL 3',
+	        84: 'B ZUG',
+	        85: 'POL 1',
+	        86: 'B 4',
+	        87: 'THL VU FLUGZEUG 1',
+	        88: 'B 1',
+	        89: 'THL 2',
+	        90: 'POL 1',
+	        91: 'THL 1',
+	        92: 'RD 2',
+	        93: 'B 3',
+	        94: 'THL 1',
+	        95: 'THL 2',
+	        96: 'B 3',
+	        97: 'ABC ÖL',
+	        98: 'POL 1',
+	        99: 'THL VU FLUGZEUG 2',
+	        100: 'B 3',
+	        101: 'B 3',
+	        102: 'B 3',
+	        103: 'B 3',
+	        104: 'B 3',
+	        105: 'B 3',
+	        106: 'POL 5',
+	        107: 'POL 5',
+	        108: 'RD 2',
+	        109: 'RD 2',
+	        110: 'RD 1',
+	        111: 'B 1',
+	        112: 'B 1',
+	        113: 'B 1',
+	        114: 'THL 1',
+	        115: 'RD 1',
+	        116: 'POL 4',
+	        117: 'POL 1',
+	        118: 'POL 3',
+	        119: 'POL 1',
+	        120: 'THL 2',
+	        121: 'THL 2',
+	        122: 'THL 1',
+	        123: 'THL 1',
+	        124: 'THL 1',
+	        125: 'THL 1',
+	        126: 'THL 1',
+	        127: 'THL 1',
+	        128: 'POL 1',
+	        129: 'B 1',
+	        130: 'POL 2',
+	        131: 'B 2',
+	        132: 'B 2',
+	        133: 'B 2',
+	        134: 'B WALD',
+	        135: 'B WALD',
+	        136: 'B WALD',
+	        137: 'B WALD',
+	        138: 'B 2',
+	        139: 'B 2',
+	        140: 'B 2',
+	        141: 'B 2',
+	        142: 'B 3',
+	        143: 'B 1',
+	        144: 'B 1',
+	        145: 'POL 1',
+	        146: 'B 4',
+	        147: 'RD KTP',
+	        148: 'POL 1',
+	        149: 'POL 1',
+	        150: 'POL 1',
+	        151: 'POL 1',
+	        152: 'POL 2',
+	        153: 'POL 1',
+	        154: 'RD 1',
+	        155: 'RD 1',
+	        156: 'RD 1',
+	        157: 'RD 2',
+	        158: 'THL 1',
+	        159: 'THL 1',
+	        160: 'THL 1',
+	        161: 'THL 1',
+	        162: 'THL 1',
+	        163: 'THL 1',
+	        164: 'RD 1',
+	        165: 'RD 1',
+	        166: 'THL 1',
+	        167: 'THL 1',
+	        168: 'THL 1',
+	        169: 'THL 1',
+	        170: 'THL 1',
+	        171: 'THL 1',
+	        172: 'THL 1',
+	        173: 'THL 1',
+	        174: 'THW 1',
+	        175: 'THW 1',
+	        176: 'THW 1',
+	        177: 'THL EINSTURZ',
+	        178: 'ABC THL 3',
+	        179: 'RD 2',
+	        180: 'RD 2',
+	        181: 'RD 2',
+	        182: 'RD 1',
+	        183: 'RD 1',
+	        184: 'RD 1',
+	        185: 'RD 1',
+	        186: 'B 4',
+	        187: 'B 3',
+	        188: 'POL 1',
+	        189: 'POL 1',
+	        190: 'POL 1',
+	        191: 'THL 1',
+	        192: 'B ELEKTRO',
+	        193: 'B ELEKTRO',
+	        194: 'THL 1',
+	        195: 'BP 1',
+	        196: 'BP 1',
+	        197: 'BP 1',
+	        198: 'BP 1',
+	        199: 'BP 1',
+	        200: 'BP 2',
+	        201: 'BP 3',
+	        202: 'POL 1',
+	        203: 'B 2',
+	        204: 'B 4',
+	        205: 'B 4',
+	        206: 'B 5',
+	        207: 'ABC 3',
+	        208: 'ABC 2',
+	        209: 'POL 1',
+	        210: 'RD 2',
+	        211: 'RD 1',
+	        212: 'RD 1',
+	        213: 'B EXPLOSION',
+	        214: 'B 4',
+	        215: 'ABC 3',
+	        216: 'B 1',
+	        217: 'B 1',
+	        218: 'B 1',
+	        219: 'B 1',
+	        220: 'B 1',
+	        221: 'THL VU ZUG',
+	        222: 'THL VU ZUG',
+	        223: 'SICHERHEITSWACHE',
+	        224: 'SICHERHEITSWACHE',
+	        225: 'SICHERHEITSWACHE',
+	        226: 'VERKEHRSSICHERUNG',
+	        227: 'ABSICHERUNG',
+	        228: 'VERKEHRSSICHERUNG',
+	        229: 'VERKEHRSSICHERUNG',
+	        230: 'B 1',
+	        231: 'POL 10',
+	        232: 'POL 3',
+	        233: 'POL 2',
+	        234: 'THL BOMBENFUND',
+	        235: 'THL P HÖHENRETTUNG',
+	        236: 'THL P HÖHENRETTUNG',
+	        237: 'THL ZUG',
+	        238: 'THL 2',
+	        239: 'THL 2',
+	        240: 'ABC 1',
+	        241: 'POL 1',
+	        242: 'POL 3',
+	        243: 'THL 1',
+	        244: 'THL WASSER',
+	        245: 'THL WASSER',
+	        246: 'THL WASSER',
+	        247: 'THL WASSER',
+	        248: 'THL WASSER',
+	        249: 'THL WASSER',
+	        250: 'THL WASSER',
+	        251: 'THL WASSER',
+	        252: 'THL WASSER',
+	        253: 'THL WASSER',
+	        254: 'THL WASSER',
+	        255: 'THL WASSER',
+	        256: 'THL VU SCHIFF',
+	        257: 'POL 2',
+	        258: 'THL 3',
+	        259: 'B 1',
+	        260: 'B 1',
+	        261: 'B 1',
+	        262: 'B 3',
+	        263: 'B 1',
+	        264: 'B 3',
+	        265: 'B 1',
+	        266: 'B 1',
+	        267: 'POL 1',
+	        268: 'B 4',
+	        269: 'POL 1',
+	        270: 'POL 1',
+	        271: 'THL ZUG',
+	        272: 'ABC WASSER',
+	        273: 'ABC WASSER',
+	        274: 'RD 2',
+	        275: 'ABSICHERUNG',
+	        276: 'POL 4',
+	        277: 'THL 1',
+	        278: 'THL 2',
+	        279: 'THL 2',
+	        280: 'THL 3',
+	        281: 'RD 2',
+	        282: 'THL 1',
+	        283: 'B 5',
+	        284: 'POL 1',
+	        285: 'POL 1',
+	        286: 'THL EINSTURZ',
+	        287: 'POL 1',
+	        288: 'B 1',
+	        289: 'THL 1',
+	        290: 'B 2',
+	        291: 'BP 3',
+	        292: 'POL 1',
+	        293: 'RD 1',
+	        294: 'BP 9',
+	        295: 'POL 6',
+	        296: 'THL 2',
+	        297: 'RD 1',
+	        298: 'THL WASSER',
+	        299: 'B 3'
+	    };
+	    var DEFAULT_AAO_EN = {
+	        0: 'FIRE 1',
+	        1: 'FIRE 1',
+	        2: 'FIRE 1',
+	        3: 'FIRE 1',
+	        4: 'FIRE 1',
+	        5: 'FIRE 2',
+	        6: 'FIRE 2',
+	        7: 'FIRE 1',
+	        8: 'FIRE 1',
+	        9: 'FIRE 1',
+	        10: 'FIRE 1',
+	        11: 'FIRE 1',
+	        12: 'TECH 1',
+	        13: 'FIRE 2',
+	        14: 'FIRE 2',
+	        15: 'FIRE 1',
+	        16: 'FIRE 2',
+	        17: 'FIRE 1',
+	        18: 'FIRE 1',
+	        19: 'FIRE 2',
+	        20: 'FIRE 3',
+	        21: 'FIRE 1',
+	        22: 'FIRE 3',
+	        23: 'FIRE 1',
+	        24: 'FIRE 1',
+	        25: 'TECH 1',
+	        26: 'FIRE 2',
+	        27: 'TECH 1',
+	        28: 'FIRE 1',
+	        29: 'FIRE 2',
+	        30: 'FIRE 1',
+	        31: 'FIRE 1',
+	        32: 'FIRE 3',
+	        33: 'FIRE 3',
+	        34: 'MED 1',
+	        35: 'MED 1',
+	        36: 'MED 1',
+	        37: 'MED 1',
+	        38: 'MED 1',
+	        39: 'MED 1',
+	        40: 'MED 1',
+	        41: 'FIRE 4',
+	        42: 'FIRE 2',
+	        43: 'MED 1',
+	        44: 'FIRE 3',
+	        45: 'FIRE 4',
+	        46: 'FIRE 4',
+	        47: 'CBRN 2',
+	        48: 'POL 1',
+	        49: 'POL 1',
+	        50: 'POL 1',
+	        51: 'POL 1',
+	        52: 'POL 1',
+	        53: 'POL 1',
+	        54: 'POL 1',
+	        55: 'POL 1',
+	        56: 'POL 1',
+	        57: 'POL 1',
+	        58: 'POL 1',
+	        59: 'POL 3',
+	        60: 'POL 2',
+	        61: 'POL 7',
+	        62: 'TECH 3',
+	        63: 'FIRE 1',
+	        64: 'FIRE 2',
+	        65: 'FIRE 2',
+	        66: 'TECH 1',
+	        67: 'MED 1',
+	        68: 'POL 4',
+	        69: 'POL 1',
+	        70: 'POL 3',
+	        71: 'POL 1',
+	        72: 'POL 1',
+	        73: 'POL 1',
+	        74: 'POL 1',
+	        75: 'FIRE 1',
+	        76: 'FIRE 2',
+	        77: 'FIRE 2',
+	        78: 'TECH 1',
+	        79: 'POL 1',
+	        80: 'FIRE 1',
+	        81: 'FIRE 1',
+	        82: 'TECH 1',
+	        83: 'FIRE 1',
+	        84: 'FIRE 1',
+	        85: 'POL 2',
+	        86: 'TECH 3',
+	        87: 'FIRE 4',
+	        88: 'TECH 2',
+	        89: 'TECH 3',
+	        90: 'POL 6',
+	        91: 'POL 7',
+	        92: 'POL 3',
+	        93: 'POL 2',
+	        94: 'POL 10',
+	        95: 'POL 5',
+	        96: 'POL 5',
+	        97: 'POL 3',
+	        98: 'CBRN 2',
+	        99: 'FIRE 4',
+	        100: 'MED 1',
+	        101: 'CBRN 2',
+	        102: 'FIRE 4',
+	        103: 'POL 2',
+	        104: 'POL 4',
+	        105: 'POL 4',
+	        106: 'POL 1',
+	        107: 'POL 1',
+	        108: 'MED 1',
+	        109: 'MED 1',
+	        110: 'FIRE 3',
+	        111: 'POL 5',
+	        112: 'FIRE 4',
+	        113: 'FIRE 2',
+	        114: 'FIRE 2',
+	        115: 'FIRE 1',
+	        116: 'FIRE 1',
+	        117: 'FIRE 1',
+	        118: 'FIRE 1',
+	        119: 'MED 1',
+	        120: 'TECH 3',
+	        121: 'POL 10',
+	        122: 'TECH 1',
+	        123: 'POL 6',
+	        124: 'POL 7',
+	        125: 'TECH 2',
+	        126: 'MED 1',
+	        127: 'FIRE 5',
+	        128: 'POL 1',
+	        129: 'POL 1',
+	        130: 'TECH 1'
+	    };
+	    var DEFAULT_AAO_NL = {
+	        0: 'KLEINE BRAND',
+	        1: 'KLEINE BRAND',
+	        2: 'KLEINE BRAND',
+	        3: 'KLEINE BRAND',
+	        4: 'KLEINE NATUURBRAND',
+	        5: 'MIDDEL BRAND',
+	        6: 'MIDDEL BRAND',
+	        7: 'KLEINE BRAND',
+	        8: 'KLEINE BRAND',
+	        9: 'KLEINE BRAND',
+	        10: 'KLEINE BRAND',
+	        11: 'KLEINE BRAND',
+	        12: 'KLEINE HV',
+	        13: 'MIDDEL BRAND',
+	        14: 'MIDDEL NATUURBRAND',
+	        15: 'KLEINE NATUURBRAND',
+	        16: 'MIDDEL BRAND',
+	        17: 'KLEINE BRAND',
+	        18: 'KLEINE NATUURBRAND',
+	        19: 'KLEINE BRAND',
+	        20: 'GROTE BRAND',
+	        21: 'KLEINE BRAND',
+	        22: 'KLEINE BRAND',
+	        23: 'MIDDEL BRAND',
+	        24: 'KLEINE BRAND',
+	        25: 'KLEINE HV',
+	        26: 'GROTE BRAND',
+	        27: 'KLEINE HV',
+	        28: 'MIDDEL BRAND',
+	        29: 'GROTE BRAND',
+	        30: 'KLEINE HV',
+	        31: 'KLEINE HV',
+	        32: 'MIDDEL BRAND',
+	        33: 'KLEINE BRAND',
+	        34: 'MIDDEL BRAND',
+	        35: 'MIDDEL BRAND',
+	        36: 'GROTE BRAND',
+	        37: 'KLEINE BRAND',
+	        38: 'KLEINE BRAND',
+	        39: 'KLEINE BRAND',
+	        40: 'KLEINE BRAND',
+	        41: 'ZEER GROTE BRAND',
+	        42: 'ZEER GROTE BRAND',
+	        43: 'ZEER GROTE HV, SIS 3',
+	        44: 'KLEINE HV',
+	        45: 'A 1',
+	        46: 'A 1',
+	        47: 'A 1',
+	        48: 'A 1',
+	        49: 'A 1',
+	        50: 'A 1',
+	        51: 'A 1',
+	        52: 'ZEER GROTE BRAND',
+	        53: 'ZEER GROTE BRAND',
+	        54: 'KLEINE BRAND',
+	        55: 'MIDDEL BRAND',
+	        56: 'ZEER GROTE BRAND',
+	        57: 'KLEINE HV',
+	        58: 'KLEINE BRAND',
+	        59: 'ZEER GROTE BRAND',
+	        60: 'MIDDEL BRAND',
+	        61: 'KLEINE BRAND',
+	        62: 'GROTE BRAND',
+	        63: 'KLEINE BRAND',
+	        64: 'MIDDEL BRAND',
+	        65: 'KLEINE BRAND',
+	        66: 'KLEINE HV',
+	        67: 'KLEINE HV',
+	        68: 'KLEINE HV',
+	        69: 'KLEINE HV',
+	        70: 'P 1',
+	        71: 'P 1',
+	        72: 'P 1',
+	        73: 'P 1',
+	        74: 'P 1',
+	        75: 'P 1',
+	        76: 'MIDDEL HV, VOS 5',
+	        77: 'MIDDEL HV, VOS 5',
+	        78: 'KLEINE BRAND',
+	        79: 'A 1',
+	        80: 'A 1',
+	        81: 'P 1',
+	        82: 'MIDDEL HV',
+	        83: 'A 1',
+	        84: 'A 1',
+	        85: 'A 1',
+	        86: 'A 1, TIS 3',
+	        87: 'A 1',
+	        88: 'A 1',
+	        89: 'A 1',
+	        90: 'A 1',
+	        91: 'A 1',
+	        92: 'A 1',
+	        93: 'A 1',
+	        94: 'A 1',
+	        95: 'A 1',
+	        96: 'A 1',
+	        97: 'A 1',
+	        98: 'KLEIN 0GS',
+	        99: 'KLEIN 0GS',
+	        100: 'MIDDEL OGS',
+	        101: 'KLEIN 0GS',
+	        102: 'MIDDEL OGS, TIS 4',
+	        103: 'KLEINE BRAND',
+	        104: 'KLEINE BRAND',
+	        105: 'KLEINE BRAND',
+	        106: 'MIDDEL HV',
+	        107: 'P 1',
+	        108: 'MIDDEL HV, TIS 3',
+	        109: 'MIDDEL HV, TIS 3',
+	        110: 'KLEINE BRAND',
+	        111: 'MIDDEL BRAND',
+	        112: 'P 1',
+	        113: 'P 1',
+	        114: 'KLEINE BRAND',
+	        115: 'MIDDEL BRAND',
+	        116: 'GEPLAND',
+	        117: 'GEPLAND',
+	        118: 'GEPLAND',
+	        119: 'GEPLAND',
+	        120: 'GEPLAND',
+	        121: 'GEPLAND',
+	        122: 'P 1',
+	        123: 'P 1',
+	        124: 'P 1',
+	        125: 'P 1',
+	        126: 'KLEINE BRAND',
+	        127: 'GROTE BRAND',
+	        128: 'KLEINE NATUURBRAND',
+	        129: 'GROTE NATUURBRAND',
+	        130: 'MIDDEL BRAND',
+	        131: 'GROTE BRAND',
+	        132: 'KLEINE BRAND',
+	        133: 'KLEINE BRAND',
+	        134: 'KLEINE BRAND',
+	        135: 'KLEINE BRAND',
+	        136: 'KLEINE BRAND',
+	        137: 'B 1',
+	        138: 'KLEINE BRAND',
+	        139: 'MIDDEL NATUURBRAND',
+	        140: 'MIDDEL NATUURBRAND',
+	        141: 'GROTE NATUURBRAND',
+	        142: 'ZEER GROTE NATUURBRAND',
+	        143: 'ZEER GROTE NATUURBRAND',
+	        144: 'ZEER GROTE NATUURBRAND',
+	        145: 'ZEER GROTE NATUURBRAND',
+	        146: 'KLEINE BRAND',
+	        147: 'MIDDEL BRAND',
+	        148: 'KLEINE BRAND',
+	        149: 'KLEINE BRAND',
+	        150: 'P 1',
+	        151: 'P 1',
+	        152: 'P 1',
+	        153: 'P 1',
+	        154: 'P 1',
+	        155: 'MIDDEL HV',
+	        156: 'GROTE HV',
+	        157: 'GROTE BRAND',
+	        158: 'KLEINE BRAND',
+	        159: 'GROTE BRAND',
+	        160: 'KLEINE BRAND',
+	        161: 'A 1',
+	        162: 'A 1',
+	        163: 'P 1',
+	        164: 'A 1',
+	        165: 'KLEINE HV',
+	        166: 'P 1',
+	        167: 'P 1',
+	        168: 'A 1',
+	        169: 'KLEINE BRAND',
+	        170: 'KLEINE BRAND',
+	        171: 'KLEINE HV',
+	        172: 'A 1',
+	        173: 'P 1',
+	        174: 'P 1',
+	        175: 'KLEINE BRAND',
+	        176: 'A 1',
+	        177: 'A 1',
+	        178: 'P 1',
+	        179: 'A 1',
+	        180: 'KLEINE WO',
+	        181: 'MIDDEL HV',
+	        182: 'KLEINE WO',
+	        183: 'KLEINE HV',
+	        184: 'KLEINE HV',
+	        185: 'KLEINE WO',
+	        186: 'KLEINE HV',
+	        187: 'KLEINE HV',
+	        188: 'KLEINE HV',
+	        189: 'KLEINE HV',
+	        190: 'KLEINE HV',
+	        191: 'KLEINE HV',
+	        192: 'KLEINE HV',
+	        193: 'KLEINE HV',
+	        194: 'KLEINE HV',
+	        195: 'KLEINE HV',
+	        196: 'KLEINE BRAND',
+	        197: 'KLEINE BRAND',
+	        198: 'KLEINE BRAND',
+	        199: 'P 1',
+	        200: 'P 1',
+	        201: 'P 1',
+	        202: 'P 1',
+	        203: 'MIDDEL OGS',
+	        204: 'MIDDEL OGS',
+	        205: 'MIDDEL WO',
+	        206: 'MIDDEL WO',
+	        207: 'KLEINE WO',
+	        208: 'MIDDEL WO',
+	        209: 'KLEINE WO',
+	        210: 'MIDDEL WO',
+	        211: 'GROTE WO',
+	        212: 'KLEINE WO',
+	        213: 'MIDDEL WO',
+	        214: 'MIDDEL NATUURBRAND',
+	        215: 'GROTE NATUURBRAND',
+	        216: 'ZEER GROTE NATUURBRAND',
+	        217: 'P 1',
+	        218: 'P 1',
+	        219: 'GEPLAND',
+	        220: 'GEPLAND',
+	        221: 'P 1',
+	        222: 'P 1',
+	        223: 'MIDDEL BRAND',
+	        224: 'KLEINE BRAND',
+	        225: 'A 1',
+	        226: 'A 1',
+	        227: 'P 1',
+	        228: 'P 1',
+	        229: 'ZEER GROTE BRAND'
+	    };
+	    
+	// Alle Einsatz-IDs mit Stichwort-Zuweisung
+	    I18n.translations.de['lssm']['missionKeyword'] = DEFAULT_AAO_DE;	
+	    I18n.translations.en['lssm']['missionKeyword'] = DEFAULT_AAO_EN;
+	    I18n.translations.nl['lssm']['missionKeyword'] = DEFAULT_AAO_NL;
+	    
+	    if(I18n.locale === 'de')
+	        defaultAao = DEFAULT_AAO_DE;
+	    else if(I18n.locale === 'en')
+	        defaultAao = DEFAULT_AAO_EN;
+	    else if(I18n.locale === 'nl')
+	        defaultAao = DEFAULT_AAO_NL;
+	    else
+	        defaultAao = DEFAULT_AAO_DE;
+	        
+	    
+	    $.each(defaultAao, function(key, val) {
+	        var tmpObject = {
+	            ['missionKeyword-'+key] : {
+	                "default": val,
+	                "ui": {
+	                    "label": I18n.t('lssm.missionKeywordDefaults.keywords.'+key)+ " (ID "+key+")",
+	                    "type": "text",
+	                    "description": ""
+	                }
+	            }
+	        };
+	        
+	        $.extend(managedSettings.settings, tmpObject);
+	        
+	    });
+	        
+	    lssm.managedSettings.register(managedSettings);	
+	}
+    
+    function getSetting(setting) {
+        return lssm.managedSettings.getSetting(LSS_MISSIONKEYWORD_STORAGE, setting);
     }
+    
+    function missionKeyword() {
+        // Stichwort Element
+        var titleStichwort = $('#missionH1');
+        // Anzahl Patientenbalken
+        var anzahlPatients = $(".patient_progress").length;
+        var aaoText = '';
+        
+        // Einsatz-ID aus Hilfe-Link
+        var missionId = $('#mission_help').attr('href').split("/").pop();
 
-    if(title_stichwort !== null && title_stichwort.innerText.includes('Brandmeldeanlage'))
-	//Wenn BMA im Titel, setze Stichwort mit BMA am Ende
-    {
-        aao_text = aao_text +' BMA';
-    }
-    var additional_aao_text = '';
-    if(anzahl_patients > 0)
-    {
-        if(I18n.locale == 'de') {
-
-			//Wenn 1+ Patienten vorhanden, modifiziere Stichwort zu XY PERSON
-            if(aao_text.match(/B [0-9]/ig))
-            {
-                aao_text = aao_text + ' PERSON';
-            }
-
-			//Füge die RD-Kennung hinzu, wenn der Einsatz KEIN RD-Einsatz ist
-            if (anzahl_patients > 1 && anzahl_patients < 4 && !aao_text.match('RD '))
-                additional_aao_text = '<span class="label label-warning">RD 3</span>';
-            else if (anzahl_patients >= 4 && anzahl_patients < 6 && !aao_text.match('RD '))
-                additional_aao_text = '<span class="label label-warning">RD 4</span>';
-            else if (anzahl_patients >= 6 && anzahl_patients < 10 && !aao_text.match('RD '))
-                additional_aao_text = '<span class="label label-warning">RD 5</span>';
-            else if (anzahl_patients >= 10 && anzahl_patients < 16 && !aao_text.match('RD '))
-                additional_aao_text = '<span class="label label-warning">MANV 10-15</span>';
-            else if (anzahl_patients >= 25 && anzahl_patients < 26 && !aao_text.match('RD '))
-                additional_aao_text = '<span class="label label-warning">MANV 16-25</span>';
-            else if (anzahl_patients >= 26 && anzahl_patients < 51 && !aao_text.match('RD '))
-                additional_aao_text = '<span class="label label-warning">MANV 26-50</span>';
-            else if (anzahl_patients >= 51 && anzahl_patients < 101 && !aao_text.match('RD '))
-                additional_aao_text = '<span class="label label-warning">MANV 51-100</span>';
-            else if (anzahl_patients >= 101 && !aao_text.match('RD '))
-                additional_aao_text = '<span class="label label-warning">MANV 100+</span>';
-        }
-        else if (I18n.locale == 'en')
+        // aao_text = I18n.t('lssm.missionKeyword.'+missionId);
+        aaoText = getSetting('missionKeyword-'+missionId);
+        if(titleStichwort.text().toLowerCase().includes(I18n.t('lssm.missionKeywordDefaults.bmaLong').toLowerCase()))
+        // Wenn BMA im Titel, setze Stichwort mit BMA am Ende
         {
-            if (anzahl_patients >= 10 && anzahl_patients < 21 && !aao_text.match('MED '))
-                additional_aao_text = '<span class="label label-warning">MED CODE 10</span>';
-            else if (anzahl_patients >= 21 && anzahl_patients < 30 && !aao_text.match('MED '))
-                additional_aao_text = '<span class="label label-warning">MED CODE 20</span>';
-            else if (anzahl_patients >= 30 && anzahl_patients < 40 && !aao_text.match('MED '))
-                additional_aao_text = '<span class="label label-warning">MED CODE 30</span>';
-            else if (anzahl_patients >= 40 && anzahl_patients < 50 && !aao_text.match('MED '))
-                additional_aao_text = '<span class="label label-warning">MED CODE 40</span>';
-            else if (anzahl_patients >= 50 && !aao_text.match('MED '))
-                additional_aao_text = '<span class="label label-warning">MED CODE 50</span>';
+            aaoText = aaoText +' '+I18n.t('lssm.missionKeywordDefaults.bma');
         }
-        else if (I18n.locale == 'nl')
+        var additionalAaoText = '';
+        if(anzahlPatients > 0)
         {
-            if (anzahl_patients >= 10 && anzahl_patients < 21 && !aao_text.match('A1'))
-                additional_aao_text = '<span class="label label-warning">A1 CODE 10</span>';
-            else if (anzahl_patients >= 21 && anzahl_patients < 30 && !aao_text.match('A 1'))
-                additional_aao_text = '<span class="label label-warning">A1 CODE 20</span>';
-            else if (anzahl_patients >= 30 && anzahl_patients < 40 && !aao_text.match('A 1'))
-                additional_aao_text = '<span class="label label-warning">A1 CODE 30</span>';
-            else if (anzahl_patients >= 40 && anzahl_patients < 50 && !aao_text.match('A 1'))
-                additional_aao_text = '<span class="label label-warning">A1 CODE 40</span>';
-            else if (anzahl_patients >= 50 && !aao_text.match('A 1'))
-                additional_aao_text = '<span class="label label-warning">A1 CODE 50</span>';
+            if(I18n.locale === 'de') {
+
+                // Wenn 1+ Patienten vorhanden, modifiziere Stichwort zu XY PERSON
+                            
+                if(aaoText.match(/B [0-9]/ig))
+                {
+                    aaoText = aaoText + ' PERSON';
+                }
+                else if(aaoText.match(/FEU [0-9]|TH [0-9]/ig))
+                {
+                    var n = aaoText.search(/[0-9]/i);
+                    if (n > 0)
+                    {
+                        aaoText = [a.slice(0, n+1), ' Y', a.slice(n+1)].join('');
+                    }
+                        
+                }
+                
+                if(!aaoText.match(I18n.t('lssm.missionKeyword.rd')))
+                {
+                    additionalAaoText = '<span class="label label-warning">';
+                    
+                    if(I18n.t('lssm.missionKeyword.rd') === 'RD')
+                    {
+                        // Füge die RD-Kennung hinzu, wenn der Einsatz KEIN RD-Einsatz ist
+                        if (anzahlPatients > 1 && anzahlPatients < 4)
+                            additionalAaoText += 'RD 3';
+                        else if (anzahlPatients >= 4 && anzahlPatients < 6)
+                            additionalAaoText += 'RD 4';
+                        else if (anzahlPatients >= 6 && anzahlPatients < 10)
+                            additionalAaoText += 'RD 5';
+                        else if (anzahlPatients >= 10 && anzahlPatients < 16)
+                            additionalAaoText += 'MANV 10-15';
+                        else if (anzahlPatients >= 16 && anzahlPatients < 26)
+                            additionalAaoText += 'MANV 16-25';
+                        else if (anzahlPatients >= 26 && anzahlPatients < 51)
+                            additionalAaoText += 'MANV 26-50';
+                        else if (anzahlPatients >= 51 && anzahlPatients < 101)
+                            additionalAaoText += 'MANV 51-100';
+                        else if (anzahlPatients >= 101)
+                            additionalAaoText += 'MANV 100+';
+                    }
+                    if(I18n.t('lssm.missionKeyword.rd') === 'NOTF')
+                    {
+                        // Füge die RD-Kennung hinzu, wenn der Einsatz KEIN RD-Einsatz ist
+                        if (anzahlPatients > 5 && anzahlPatients < 11)
+                            additionalAaoText += 'MANV10';
+                        else if (anzahlPatients >= 11 && anzahlPatients < 26)
+                            additionalAaoText += 'MANV25';
+                        else if (anzahlPatients >= 26 && anzahlPatients < 51)
+                            additionalAaoText += 'MANV50';
+                        else if (anzahlPatients >= 51)
+                            additionalAaoText += 'MANV50+';
+                    }	
+                    additionalAaoText += '</span>';
+                }
+            }
+            else if (I18n.locale === 'en')
+            {
+                if(!aaoText.match('MED '))
+                {
+                    additionalAaoText = '<span class="label label-warning">';
+                    if (anzahlPatients >= 10 && anzahlPatients < 21)
+                        additionalAaoText += 'MED CODE 10';
+                    else if (anzahlPatients >= 21 && anzahlPatients < 30)
+                        additionalAaoText += 'MED CODE 20';
+                    else if (anzahlPatients >= 30 && anzahlPatients < 40)
+                        additionalAaoText += 'MED CODE 30';
+                    else if (anzahlPatients >= 40 && anzahlPatients < 50)
+                        additionalAaoText += 'MED CODE 40';
+                    else if (anzahlPatients >= 50)
+                        additionalAaoText += 'MED CODE 50';
+                        
+                    additionalAaoText += '</span>';
+                }
+            }
+            else if (I18n.locale === 'nl')
+            {
+                if(!aaoText.match('A 1'))
+                {
+                    additionalAaoText = '<span class="label label-warning">';
+                    if (anzahlPatients >= 10 && anzahlPatients < 21)
+                        additionalAaoText += 'A 1 CODE 10';
+                    else if (anzahlPatients >= 21 && anzahlPatients < 30)
+                        additionalAaoText += 'A 1 CODE 20';
+                    else if (anzahlPatients >= 30 && anzahlPatients < 40)
+                        additionalAaoText += 'A 1 CODE 30';
+                    else if (anzahlPatients >= 40 && anzahlPatients < 50)
+                        additionalAaoText += 'A 1 CODE 40';
+                    else if (anzahlPatients >= 50)
+                        additionalAaoText += 'A 1 CODE 50';
+                        
+                    additionalAaoText += '</span>';
+                }
+            }
+        }
+        var color = 'black';
+        var label = 'label-info';
+
+        // Setze Label Farben
+        if(aaoText.match(I18n.t('lssm.missionKeywordDefaults.rd')) || aaoText.match(I18n.t('lssm.missionKeywordDefaults.ktp')))
+        {
+            label = 'label-warning';
+        }
+        if(aaoText.match(I18n.t('lssm.missionKeywordDefaults.fw')) || aaoText.match(I18n.t('lssm.missionKeywordDefaults.thl')) || aaoText.match(I18n.t('lssm.missionKeywordDefaults.abc')))
+        {
+            label = 'label-danger';
+        }
+        if(aaoText.match(I18n.t('lssm.missionKeywordDefaults.pol')) || aaoText.match(I18n.t('lssm.missionKeywordDefaults.bp')))
+        {
+            label = 'label-success';
+        }
+        if(aaoText.match(I18n.t('lssm.missionKeywordDefaults.thw')))
+        {
+            label = 'label-primary';
+        }
+
+        // Füge Label hinzu
+        if(titleStichwort !== null){
+        	titleStichwort.append('<span class="label '+label+'">'+aaoText+'</span>'+additionalAaoText);
         }
     }
-    var color = 'black';
-    var label = 'label-info';
-
-	//Setze Label Farben
-    if(aao_text.match(I18n.t('lssm.missionKeyword.rd')) || aao_text.match(I18n.t('lssm.missionKeyword.ktp')))
-    {
-        color = color_rd;
-        label = 'label-warning';
-    }
-    if(aao_text.match(I18n.t('lssm.missionKeyword.fw')) || aao_text.match(I18n.t('lssm.missionKeyword.thl')) || aao_text.match(I18n.t('lssm.missionKeyword.abc')))
-    {
-        color = color_fw;
-        label = 'label-danger';
-    }
-    if(aao_text.match(I18n.t('lssm.missionKeyword.pol')) || aao_text.match(I18n.t('lssm.missionKeyword.bp')))
-    {
-        color = color_pol;
-        label = 'label-success';
-    }
-    if(aao_text.match(I18n.t('lssm.missionKeyword.thw')))
-    {
-        color = color_thw;
-        label = 'label-primary';
-    }
-
-	//Füge Label hinzu
-    //title_stichwort.insertAdjacentHTML('afterbegin', '<b>:'+mission_id+':<font color="'+color+'">'+aao_text+'</font></b>');
-    if(title_stichwort !== null)
-	    title_stichwort.insertAdjacentHTML('beforeend', '<span class="label '+label+'">'+aao_text+'</span>'+additional_aao_text);
+    
+    setSettings();
+    
+    // Only execute this script in the alert iframe.
+    // Identify the iframe with mission_help link.    
+    var missionHelp = $('#mission_help');
+    if(missionHelp.length >0){
+    	missionKeyword();
+    } 
 })();
